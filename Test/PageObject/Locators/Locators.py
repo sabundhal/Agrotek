@@ -22,6 +22,7 @@ AddCondition = "css:[data-item-marker='Добавить условие']"
 AddTypeFilter = ".//*[@class='base-edit ts-box-sizing base-edit-with-right-icon filter-simple-filter-edit']/input"
 InputValueFilter = ".//*[@class='base-edit ts-box-sizing filter-simple-filter-edit']/input"
 ApplyFilter = ".//*[@class='t-btn-wrapper t-btn-no-text-padding t-btn-style-blue filter-element-with-right-space']/span"
+ListFilters = ".//*[@class='listview listview-scroll']/ul[1]//*[@data-item-marker='Валюта']"
 
 
 # Payment Schedule Section
@@ -39,3 +40,5 @@ centerPanel = "id:centerPanel"
 #    [Return]    ${value}
 
 #    wait until keyword succeeds    10s    1s    click element  ${locatorAttribute}
+
+# base - edit - focus

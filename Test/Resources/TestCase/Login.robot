@@ -16,6 +16,7 @@ Login to Acros
     When Click PaymentScheduleSection
     When Section Filter Remove
     When Set Section Filter    Валюта    Рубль
+    When Set Section Filter    Название    1
     sleep    5s
     When Close Browser
 

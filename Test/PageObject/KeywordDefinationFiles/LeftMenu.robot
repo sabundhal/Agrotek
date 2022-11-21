@@ -30,5 +30,6 @@ Go Sales
 
 Click PaymentScheduleSection
     Wait Until Element Is Visible  ${PaymentScheduleSection}  timeout=30
+    set focus to element    ${PaymentScheduleSection}
     wait until keyword succeeds    10s    1s    click element  ${PaymentScheduleSection}
 
