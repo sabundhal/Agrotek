@@ -14,8 +14,8 @@ Click Login
 
 Auto Login
     Open Browser  ${URL}  Chrome
-    Wait Until Element Is Visible  ${LoginButton}  timeout=5
+    Wait Until Page Contains Element  ${LoginButton}  timeout=30
     Input Username
     Input Password
     Click Login
-    Wait Until Element Is Visible  ${MainHeaderLabel}  timeout=30
+    Wait Until Page Contains Element  ${MainHeaderLabel}  timeout=30

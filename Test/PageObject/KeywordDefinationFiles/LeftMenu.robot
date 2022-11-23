@@ -6,30 +6,29 @@ Variables    ../Locators/Locators.py
 *** Keywords ***
 
 ##############################TopMenu################################
-Click Sales
-    Wait Until Element Is Visible  ${Sales}  timeout=5
-    Click Element  ${Sales}
-
-Click Studio
-    Wait Until Element Is Visible  ${Studio}  timeout=5
-    Click Element  ${Studio}
-
-Click TopMenu
-    Wait Until Element Is Visible  ${TopMenu}  timeout=5
-    Click Element  ${TopMenu}
+Click
+    [Arguments]    ${Element}
+    ${check_element}=  Run Keyword and Return Status   Wait Until Page Contains Element    ${Element}    10s
+    Run Keyword If      '${check_element}' == 'True'     Click Element  ${Element}
 
 Go Studio
-    Click TopMenu
-    Click Studio
+    ${Label}=    get text      ${TextMenu}
+    IF  "Продажи" == "${Label}"
+        Click  ${TopMenu}
+        Click  ${Studio}
+    END
 
 Go Sales
-    Click TopMenu
-    Click Sales
+    ${Label}=    get text      ${TextMenu}
+    IF  "Студия" == "${Label}"
+        Click  ${TopMenu}
+        Click  ${Sales}
+    END
 
 ##############################GoPages################################
 
 Click PaymentScheduleSection
-    Wait Until Element Is Visible  ${PaymentScheduleSection}  timeout=30
-    set focus to element    ${PaymentScheduleSection}
-    wait until keyword succeeds    10s    1s    click element  ${PaymentScheduleSection}
+    Click  ${PaymentScheduleSection}
 
+Click IntegrationLogSection
+    Click  ${IntegrationLogSection}

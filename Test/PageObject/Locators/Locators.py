@@ -1,5 +1,4 @@
 # Login Page locators
-URL = "http://across-test.maticson-lab.ru/Login"  # Acros
 LoginUsernameInputBox = "id:loginEdit-el"
 LoginPasswordInputBox = "id:passwordEdit-el"
 LoginButton = "id:t-comp17-textEl"
@@ -8,21 +7,23 @@ LoginButton = "id:t-comp17-textEl"
 MainHeaderLabel = "id:MainHeaderSchemaCaptionValueLabel"
 
 # Left Menu
-PaymentScheduleSection = "css:[module-name=\"McsPaymentSchedule\"]"
+PaymentScheduleSection = "id:sidebar-item-text-8"
+IntegrationLogSection = "id:sidebar-item-text-11"
 TopMenu = "id:top-menu-workplace-button-container"
+TextMenu = "xpath=.//*[@id='top-menu-workplace-button-container']/span/span"
 Sales = "css:[data-item-marker=\"Продажи\"]"
 Studio = "css:[data-item-marker=\"Студия\"]"
 
 # CommonSection
 CustomFilterContainer = "css:[class=\"custom-filter-container custom-filter-arrow\"]"
 TagFilterAddButton = "css:[data-item-marker=\"TagFilterAddButton\"]"
-FilterRemoveButton = ".//*[@class='t-btn-wrapper t-btn-no-text-padding t-btn-style-transparent filter-remove-button']"
+FilterRemoveButton = "xpath=.//*[@class='custom-filter-container custom-filter-arrow']//*[@class='t-btn-wrapper t-btn-no-text-padding t-btn-style-transparent filter-remove-button']"
 AddFilterButton = "css:[class='filter-inner-container custom-filter-button-container']"
 AddCondition = "css:[data-item-marker='Добавить условие']"
-AddTypeFilter = ".//*[@class='base-edit ts-box-sizing base-edit-with-right-icon filter-simple-filter-edit']/input"
-InputValueFilter = ".//*[@class='base-edit ts-box-sizing filter-simple-filter-edit']/input"
-ApplyFilter = ".//*[@class='t-btn-wrapper t-btn-no-text-padding t-btn-style-blue filter-element-with-right-space']/span"
-ListFilters = ".//*[@class='listview listview-scroll']/ul[1]//*[@data-item-marker='Валюта']"
+AddTypeFilter = "xpath=.//*[@class='base-edit ts-box-sizing base-edit-with-right-icon filter-simple-filter-edit']/input"
+InputValueFilter = "xpath=.//*[@class='base-edit ts-box-sizing filter-simple-filter-edit']/input"
+ApplyFilter = "xpath=.//*[@class='t-btn-wrapper t-btn-no-text-padding t-btn-style-blue filter-element-with-right-space']/span"
+ListFilters = "xpath=.//*[@class='listview listview-scroll']/ul[1]//*[@data-item-marker='Валюта']"
 
 
 # Payment Schedule Section
