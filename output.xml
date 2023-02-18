@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.9 on darwin)" generated="20230217 21:20:31.056" rpa="false" schemaversion="3">
-<suite id="s1" name="Agrotek" source="/Users/uliaradnova/Documents/Auto/Agrotek">
-<suite id="s1-s1" name="Test" source="/Users/uliaradnova/Documents/Auto/Agrotek/Test">
-<suite id="s1-s1-s1" name="Resources" source="/Users/uliaradnova/Documents/Auto/Agrotek/Test/Resources">
-<suite id="s1-s1-s1-s1" name="TestCase" source="/Users/uliaradnova/Documents/Auto/Agrotek/Test/Resources/TestCase">
-<suite id="s1-s1-s1-s1-s1" name="Login" source="/Users/uliaradnova/Documents/Auto/Agrotek/Test/Resources/TestCase/Login.robot">
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230218 18:36:56.189" rpa="false" schemaversion="3">
+<suite id="s1" name="Agrotek" source="C:\Users\User\PycharmProjects\Agrotek">
+<suite id="s1-s1" name="Test" source="C:\Users\User\PycharmProjects\Agrotek\Test">
+<suite id="s1-s1-s1" name="Resources" source="C:\Users\User\PycharmProjects\Agrotek\Test\Resources">
+<suite id="s1-s1-s1-s1" name="TestCase" source="C:\Users\User\PycharmProjects\Agrotek\Test\Resources\TestCase">
+<suite id="s1-s1-s1-s1-s1" name="Login" source="C:\Users\User\PycharmProjects\Agrotek\Test\Resources\TestCase\Login.robot">
 <test id="s1-s1-s1-s1-s1-t1" name="Login to Agrotek" line="11">
 <kw name="When Auto Login" library="LoginPage">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230217 21:20:31.322" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
-<status status="PASS" starttime="20230217 21:20:31.322" endtime="20230217 21:20:33.623"/>
+<msg timestamp="20230218 18:36:56.512" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
+<status status="PASS" starttime="20230218 18:36:56.511" endtime="20230218 18:36:58.501"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 21:20:33.624" endtime="20230217 21:20:37.684"/>
+<status status="PASS" starttime="20230218 18:36:58.501" endtime="20230218 18:37:03.856"/>
 </kw>
 <kw name="Input Username" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginUsernameInputBox}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 21:20:37.687" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
-<status status="PASS" starttime="20230217 21:20:37.686" endtime="20230217 21:20:37.850"/>
+<msg timestamp="20230218 18:37:03.857" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
+<status status="PASS" starttime="20230218 18:37:03.856" endtime="20230218 18:37:03.954"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:37.685" endtime="20230217 21:20:37.851"/>
+<status status="PASS" starttime="20230218 18:37:03.856" endtime="20230218 18:37:03.954"/>
 </kw>
 <kw name="Input Password" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginPasswordInputBox}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 21:20:37.852" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
-<status status="PASS" starttime="20230217 21:20:37.851" endtime="20230217 21:20:37.931"/>
+<msg timestamp="20230218 18:37:03.955" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
+<status status="PASS" starttime="20230218 18:37:03.955" endtime="20230218 18:37:04.040"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:37.851" endtime="20230217 21:20:37.931"/>
+<status status="PASS" starttime="20230218 18:37:03.954" endtime="20230218 18:37:04.041"/>
 </kw>
 <kw name="Click Login" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:20:37.932" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
-<status status="PASS" starttime="20230217 21:20:37.932" endtime="20230217 21:20:37.995"/>
+<msg timestamp="20230218 18:37:04.042" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
+<status status="PASS" starttime="20230218 18:37:04.041" endtime="20230218 18:37:04.095"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:37.931" endtime="20230217 21:20:37.995"/>
+<status status="PASS" starttime="20230218 18:37:04.041" endtime="20230218 18:37:04.095"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${MainHeaderLabel}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 21:20:37.995" endtime="20230217 21:20:47.228"/>
+<status status="PASS" starttime="20230218 18:37:04.095" endtime="20230218 18:37:18.905"/>
 </kw>
 <kw name="Click CollapseBtnMenu" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CollapseBtnMenu}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:20:47.230" level="INFO">Clicking element 'id:collapse-button-imageEl'.</msg>
-<status status="PASS" starttime="20230217 21:20:47.229" endtime="20230217 21:20:47.339"/>
+<msg timestamp="20230218 18:37:18.907" level="INFO">Clicking element 'id:collapse-button-imageEl'.</msg>
+<status status="PASS" starttime="20230218 18:37:18.906" endtime="20230218 18:37:18.988"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:47.228" endtime="20230217 21:20:47.339"/>
+<status status="PASS" starttime="20230218 18:37:18.906" endtime="20230218 18:37:18.988"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:31.321" endtime="20230217 21:20:47.339"/>
+<status status="PASS" starttime="20230218 18:36:56.511" endtime="20230218 18:37:18.988"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:20:49.340" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:20:47.340" endtime="20230217 21:20:49.341"/>
+<msg timestamp="20230218 18:37:20.997" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:18.989" endtime="20230218 18:37:20.997"/>
 </kw>
 <kw name="When Go Sales" library="LeftMenu">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${Label}</var>
 <arg>${TextMenu}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:20:49.396" level="INFO">${Label} = Продажи</msg>
-<status status="PASS" starttime="20230217 21:20:49.343" endtime="20230217 21:20:49.396"/>
+<msg timestamp="20230218 18:37:21.182" level="INFO">${Label} = Продажи</msg>
+<status status="PASS" starttime="20230218 18:37:20.998" endtime="20230218 18:37:21.182"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;Студия&quot; == &quot;${Label}&quot;">
 <kw name="Click" library="LeftMenu">
 <arg>${TopMenu}</arg>
-<status status="NOT RUN" starttime="20230217 21:20:49.397" endtime="20230217 21:20:49.397"/>
+<status status="NOT RUN" starttime="20230218 18:37:21.182" endtime="20230218 18:37:21.182"/>
 </kw>
 <kw name="Click" library="LeftMenu">
 <arg>${Sales}</arg>
-<status status="NOT RUN" starttime="20230217 21:20:49.397" endtime="20230217 21:20:49.397"/>
+<status status="NOT RUN" starttime="20230218 18:37:21.183" endtime="20230218 18:37:21.183"/>
 </kw>
-<status status="NOT RUN" starttime="20230217 21:20:49.396" endtime="20230217 21:20:49.397"/>
+<status status="NOT RUN" starttime="20230218 18:37:21.182" endtime="20230218 18:37:21.183"/>
 </branch>
-<status status="PASS" starttime="20230217 21:20:49.396" endtime="20230217 21:20:49.397"/>
+<status status="PASS" starttime="20230218 18:37:21.182" endtime="20230218 18:37:21.183"/>
 </if>
-<status status="PASS" starttime="20230217 21:20:49.342" endtime="20230217 21:20:49.397"/>
+<status status="PASS" starttime="20230218 18:37:20.998" endtime="20230218 18:37:21.183"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:20:51.398" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:20:49.397" endtime="20230217 21:20:51.399"/>
+<msg timestamp="20230218 18:37:23.195" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:21.183" endtime="20230218 18:37:23.195"/>
 </kw>
 <kw name="When Click Сounterparty" library="LeftMenu">
 <kw name="Click" library="LeftMenu">
@@ -115,10 +115,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 21:20:51.402" endtime="20230217 21:20:51.419"/>
+<status status="PASS" starttime="20230218 18:37:23.197" endtime="20230218 18:37:23.208"/>
 </kw>
-<msg timestamp="20230217 21:20:51.419" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230217 21:20:51.401" endtime="20230217 21:20:51.419"/>
+<msg timestamp="20230218 18:37:23.208" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230218 18:37:23.196" endtime="20230218 18:37:23.208"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -128,228 +128,156 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:20:51.421" level="INFO">Clicking element 'id:sidebar-item-text-4'.</msg>
-<status status="PASS" starttime="20230217 21:20:51.420" endtime="20230217 21:20:51.471"/>
+<msg timestamp="20230218 18:37:23.209" level="INFO">Clicking element 'id:sidebar-item-text-4'.</msg>
+<status status="PASS" starttime="20230218 18:37:23.209" endtime="20230218 18:37:23.260"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:51.420" endtime="20230217 21:20:51.471"/>
+<status status="PASS" starttime="20230218 18:37:23.209" endtime="20230218 18:37:23.260"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:51.400" endtime="20230217 21:20:51.471"/>
+<status status="PASS" starttime="20230218 18:37:23.196" endtime="20230218 18:37:23.260"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${AddСounterpartyBtn}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230217 21:20:51.471" endtime="20230217 21:20:53.407"/>
+<status status="PASS" starttime="20230218 18:37:23.261" endtime="20230218 18:37:25.608"/>
 </kw>
-<status status="PASS" starttime="20230217 21:20:51.399" endtime="20230217 21:20:53.407"/>
+<status status="PASS" starttime="20230218 18:37:23.195" endtime="20230218 18:37:25.609"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:20:55.409" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:20:53.408" endtime="20230217 21:20:55.409"/>
+<msg timestamp="20230218 18:37:27.619" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:25.609" endtime="20230218 18:37:27.619"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:21:00.413" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230217 21:20:55.410" endtime="20230217 21:21:00.413"/>
+<msg timestamp="20230218 18:37:32.623" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:27.619" endtime="20230218 18:37:32.623"/>
 </kw>
 <kw name="When Go Into Counterparty" library="Counterparty">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:21:00.418" level="INFO">Clicking element 'xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='j_Test_New5']'.</msg>
-<status status="PASS" starttime="20230217 21:21:00.415" endtime="20230217 21:21:00.543"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:21:05.543" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230217 21:21:00.543" endtime="20230217 21:21:05.544"/>
-</kw>
-<kw name="Input Email" library="Counterparty">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${Email}</arg>
-<arg>${EmailValue}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 21:21:05.547" level="INFO">Typing text 'test.avtotest.1@yandex.ru' into text field 'xpath=//*[@data-row='7']/div/div/div/input'.</msg>
-<status status="PASS" starttime="20230217 21:21:05.545" endtime="20230217 21:21:05.719"/>
-</kw>
-<status status="PASS" starttime="20230217 21:21:05.544" endtime="20230217 21:21:05.719"/>
+<msg timestamp="20230218 18:37:32.624" level="INFO">Clicking element 'xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='j_Test_New5']'.</msg>
+<status status="PASS" starttime="20230218 18:37:32.624" endtime="20230218 18:37:32.733"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:21:07.720" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:21:05.719" endtime="20230217 21:21:07.721"/>
+<msg timestamp="20230218 18:37:34.740" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:32.733" endtime="20230218 18:37:34.740"/>
 </kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230218 18:37:36.753" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:34.740" endtime="20230218 18:37:36.753"/>
+</kw>
+<kw name="Click AddNewContactBtn" library="Counterparty">
+<kw name="Click" library="Counterparty">
+<arg>${AddNewContactBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230218 18:37:36.754" endtime="20230218 18:37:37.374"/>
+</kw>
+<msg timestamp="20230218 18:37:37.374" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230218 18:37:36.754" endtime="20230218 18:37:37.374"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${Phone}</arg>
+<arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:21:07.722" level="INFO">Clicking element 'xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']'.</msg>
-<status status="PASS" starttime="20230217 21:21:07.721" endtime="20230217 21:21:07.840"/>
+<msg timestamp="20230218 18:37:37.376" level="INFO">Clicking element 'xpath=//span[@id='ContactProfileSchemaAddButtonButton-textEl']'.</msg>
+<status status="PASS" starttime="20230218 18:37:37.375" endtime="20230218 18:37:37.477"/>
+</kw>
+<status status="PASS" starttime="20230218 18:37:37.375" endtime="20230218 18:37:37.477"/>
+</kw>
+<status status="PASS" starttime="20230218 18:37:36.753" endtime="20230218 18:37:37.477"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ContactHeader}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230218 18:37:37.477" endtime="20230218 18:37:37.495"/>
+</kw>
+<status status="PASS" starttime="20230218 18:37:36.753" endtime="20230218 18:37:37.495"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:21:09.841" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:21:07.840" endtime="20230217 21:21:09.842"/>
+<msg timestamp="20230218 18:37:39.510" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230218 18:37:37.495" endtime="20230218 18:37:39.510"/>
 </kw>
-<kw name="Input Phone" library="Counterparty">
+<kw name="Input MobilePhoneNewContact" library="Counterparty">
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>${Phone}</arg>
+<arg>${MobilePhoneNewContact}</arg>
 <arg>${PhoneValue}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 21:21:09.843" level="INFO">Typing text '9999999999' into text field 'xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']'.</msg>
-<status status="PASS" starttime="20230217 21:21:09.842" endtime="20230217 21:21:09.933"/>
+<msg timestamp="20230218 18:37:39.511" level="INFO">Typing text '9999999999' into text field 'xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']'.</msg>
+<msg timestamp="20230218 18:37:40.513" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-49.png"&gt;&lt;img src="selenium-screenshot-49.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230218 18:37:40.513" level="FAIL">Element with locator 'xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']' not found.</msg>
+<status status="FAIL" starttime="20230218 18:37:39.510" endtime="20230218 18:37:40.515"/>
 </kw>
-<status status="PASS" starttime="20230217 21:21:09.842" endtime="20230217 21:21:09.934"/>
+<status status="FAIL" starttime="20230218 18:37:39.510" endtime="20230218 18:37:40.515"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:21:11.935" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:21:09.934" endtime="20230217 21:21:11.936"/>
+<status status="NOT RUN" starttime="20230218 18:37:40.515" endtime="20230218 18:37:40.515"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230218 18:37:40.515" endtime="20230218 18:37:40.515"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${SaveButton}</arg>
+<arg>${WorkPhoneNewContact}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230217 21:21:11.938" level="INFO">Clicking element 'xpath=//*[@data-item-marker='SaveButton']'.</msg>
-<status status="PASS" starttime="20230217 21:21:11.936" endtime="20230217 21:21:12.100"/>
+<status status="NOT RUN" starttime="20230218 18:37:40.516" endtime="20230218 18:37:40.516"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230218 18:37:40.516" endtime="20230218 18:37:40.516"/>
+</kw>
+<status status="FAIL" starttime="20230218 18:37:32.623" endtime="20230218 18:37:40.516"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230217 21:21:14.102" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230217 21:21:12.100" endtime="20230217 21:21:14.102"/>
-</kw>
-<kw name="Input PublicName" library="Counterparty">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${PublicName}</arg>
-<arg>${PublicNameValue}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230217 21:21:14.105" level="INFO">Typing text 'j_Test_PublicName1' into text field 'xpath=//div[contains(@data-item-marker,'Публичное наименование')]'.</msg>
-<msg timestamp="20230217 21:21:14.382" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230217 21:21:14.383" level="FAIL">InvalidElementStateException: Message: invalid element state
-  (Session info: chrome=109.0.5414.119)
-Stacktrace:
-0   chromedriver                        0x000000010efedfa8 chromedriver + 4886440
-1   chromedriver                        0x000000010ef6b643 chromedriver + 4351555
-2   chromedriver                        0x000000010ebb999d chromedriver + 477597
-3   chromedriver                        0x000000010ebf3745 chromedriver + 714565
-4   chromedriver                        0x000000010ec245d2 chromedriver + 914898
-5   chromedriver                        0x000000010ebf03dd chromedriver + 701405
-6   chromedriver                        0x000000010ec2478e chromedriver + 915342
-7   chromedriver                        0x000000010ec3f5fe chromedriver + 1025534
-8   chromedriver                        0x000000010ec243a3 chromedriver + 914339
-9   chromedriver                        0x000000010ebee57f chromedriver + 693631
-10  chromedriver                        0x000000010ebefb1e chromedriver + 699166
-11  chromedriver                        0x000000010efbab9e chromedriver + 4676510
-12  chromedriver                        0x000000010efbf91e chromedriver + 4696350
-13  chromedriver                        0x000000010efc719f chromedriver + 4727199
-14  chromedriver                        0x000000010efc081a chromedriver + 4700186
-15  chromedriver                        0x000000010ef93a62 chromedriver + 4516450
-16  chromedriver                        0x000000010efdf8c8 chromedriver + 4827336
-17  chromedriver                        0x000000010efdfa45 chromedriver + 4827717
-18  chromedriver                        0x000000010eff57ef chromedriver + 4917231
-19  libsystem_pthread.dylib             0x00007ff8054ea4e1 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff8054e5f6b thread_start + 15
-</msg>
-<status status="FAIL" starttime="20230217 21:21:14.103" endtime="20230217 21:21:14.415"/>
-</kw>
-<status status="FAIL" starttime="20230217 21:21:14.102" endtime="20230217 21:21:14.416"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.416" endtime="20230217 21:21:14.416"/>
-</kw>
-<kw name="Input ShortName" library="Counterparty">
-<status status="NOT RUN" starttime="20230217 21:21:14.417" endtime="20230217 21:21:14.417"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.417" endtime="20230217 21:21:14.417"/>
-</kw>
-<kw name="Input OGRN" library="Counterparty">
-<status status="NOT RUN" starttime="20230217 21:21:14.417" endtime="20230217 21:21:14.417"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.417" endtime="20230217 21:21:14.417"/>
-</kw>
-<kw name="Input KPP" library="Counterparty">
-<status status="NOT RUN" starttime="20230217 21:21:14.417" endtime="20230217 21:21:14.418"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.418" endtime="20230217 21:21:14.418"/>
-</kw>
-<kw name="Input OKPO" library="Counterparty">
-<status status="NOT RUN" starttime="20230217 21:21:14.418" endtime="20230217 21:21:14.418"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.418" endtime="20230217 21:21:14.418"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${SaveButton}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.418" endtime="20230217 21:21:14.418"/>
-</kw>
-<status status="FAIL" starttime="20230217 21:21:00.414" endtime="20230217 21:21:14.419"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.419" endtime="20230217 21:21:14.419"/>
+<status status="NOT RUN" starttime="20230218 18:37:40.516" endtime="20230218 18:37:40.516"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5000s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230217 21:21:14.419" endtime="20230217 21:21:14.420"/>
+<status status="NOT RUN" starttime="20230218 18:37:40.517" endtime="20230218 18:37:40.517"/>
 </kw>
 <tag>Smoke</tag>
-<status status="FAIL" starttime="20230217 21:20:31.321" endtime="20230217 21:21:14.420">InvalidElementStateException: Message: invalid element state
-  (Session info: chrome=109.0.5414.119)
-Stacktrace:
-0   chromedriver                        0x000000010efedfa8 chromedriver + 4886440
-1   chromedriver                        0x000000010ef6b643 chromedriver + 4351555
-2   chromedriver                        0x000000010ebb999d chromedriver + 477597
-3   chromedriver                        0x000000010ebf3745 chromedriver + 714565
-4   chromedriver                        0x000000010ec245d2 chromedriver + 914898
-5   chromedriver                        0x000000010ebf03dd chromedriver + 701405
-6   chromedriver                        0x000000010ec2478e chromedriver + 915342
-7   chromedriver                        0x000000010ec3f5fe chromedriver + 1025534
-8   chromedriver                        0x000000010ec243a3 chromedriver + 9...
-    [ Message content over the limit has been removed. ]
-...hromedriver                        0x000000010ebefb1e chromedriver + 699166
-11  chromedriver                        0x000000010efbab9e chromedriver + 4676510
-12  chromedriver                        0x000000010efbf91e chromedriver + 4696350
-13  chromedriver                        0x000000010efc719f chromedriver + 4727199
-14  chromedriver                        0x000000010efc081a chromedriver + 4700186
-15  chromedriver                        0x000000010ef93a62 chromedriver + 4516450
-16  chromedriver                        0x000000010efdf8c8 chromedriver + 4827336
-17  chromedriver                        0x000000010efdfa45 chromedriver + 4827717
-18  chromedriver                        0x000000010eff57ef chromedriver + 4917231
-19  libsystem_pthread.dylib             0x00007ff8054ea4e1 _pthread_start + 125
-20  libsystem_pthread.dylib             0x00007ff8054e5f6b thread_start + 15</status>
+<status status="FAIL" starttime="20230218 18:36:56.510" endtime="20230218 18:37:40.517">Element with locator 'xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']' not found.</status>
 </test>
 <doc>Login</doc>
-<status status="FAIL" starttime="20230217 21:20:31.094" endtime="20230217 21:21:14.422"/>
+<status status="FAIL" starttime="20230218 18:36:56.228" endtime="20230218 18:37:40.519"/>
 </suite>
-<status status="FAIL" starttime="20230217 21:20:31.091" endtime="20230217 21:21:14.424"/>
+<status status="FAIL" starttime="20230218 18:36:56.225" endtime="20230218 18:37:40.521"/>
 </suite>
-<status status="FAIL" starttime="20230217 21:20:31.090" endtime="20230217 21:21:14.425"/>
+<status status="FAIL" starttime="20230218 18:36:56.223" endtime="20230218 18:37:40.522"/>
 </suite>
-<status status="FAIL" starttime="20230217 21:20:31.088" endtime="20230217 21:21:14.426"/>
+<status status="FAIL" starttime="20230218 18:36:56.221" endtime="20230218 18:37:40.524"/>
 </suite>
-<status status="FAIL" starttime="20230217 21:20:31.059" endtime="20230217 21:21:14.427"/>
+<status status="FAIL" starttime="20230218 18:36:56.193" endtime="20230218 18:37:40.525"/>
 </suite>
 <statistics>
 <total>

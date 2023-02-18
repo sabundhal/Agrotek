@@ -31,25 +31,28 @@ OwnersFormCounterparty = "xpath=//li[@data-value='98be4276-f36b-1410-fb98-00155d
 SaveEditButton = "xpath=//*[@data-item-marker='SaveEditButton']"
 #PaymentDetails
 AddPaymentDetailsBtn = "xpath=//*[@id='AccountBillingInfoDetailV2AddRecordButtonButton-imageEl']"
-BIK = "xpath=//div[contains(@data-item-marker,'БИК')]"
-AccountNumber = "xpath=//div[contains(@data-item-marker,'Номер счета')]"
+BIK = "xpath=//div[contains(@data-item-marker,'БИК')]/input"
+
+
+AccountNumber = "xpath=//div[contains(@data-item-marker,'Номер счета')]/input"
 SaveButton = "xpath=//*[@data-item-marker='SaveButton']"
 #CountryLookup
 AddAddressDetailsBtn = "xpath=//*[@id='AccountAddressDetailV2AddTypedRecordButtonButton-imageEl']"
-TypeAdress = "data-item-marker:Юридический"
-Country = "id:AccountAddressPageV2CountryLookupEdit-el"
-Region = "id:AccountAddressPageV2RegionLookupEdit-el"
-Area = "xpath=//div[contains(@data-item-marker,'Район')]"
-City = "id:AccountAddressPageV2CityLookupEdit-el"
-AdressFromCity = "xpath=//*[@data-row='4']/div/div/div"
-ZipCode = "id:AccountAddressPageV2ZipTextEdit-el"
+TypeAdress = "xpath=//*[@data-item-marker='Юридический']"
+Country = "//input[@id='AccountAddressPageV2CountryLookupEdit-el']"
+Region = "//input[@id='AccountAddressPageV2RegionLookupEdit-el']"
+Area = "xpath=//div[contains(@data-item-marker,'Район')]/input"
+City = "xpath=//input[@id='AccountAddressPageV2CityLookupEdit-el']"
+AdressFromCity = "xpath=//*[@data-row='4']/div/div/div/input"
+ZipCode = "//input[@id='AccountAddressPageV2ZipTextEdit-el']"
 SaveButtonAdress = "xpath=//*[@data-item-marker='SaveButton']"
+
 #LegalInformation
-PublicName = "xpath=//div[contains(@data-item-marker,'Публичное наименование')]"
-ShortName = "xpath=//div[contains(@data-item-marker,'Краткое наименование')]"
-OGRN = "xpath=//div[contains(@data-item-marker,'ОГРН')]/.."
-KPP = "xpath=//div[contains(@data-item-marker,'КПП')]/.."
-OKPO = "xpath=//div[contains(@data-item-marker,'Код ОКПО')]/.."
+PublicName = "xpath=//div[contains(@data-item-marker,'Публичное наименование')]/input"
+ShortName = "xpath=//div[contains(@data-item-marker,'Краткое наименование')]/div/textarea[2]"
+OGRN = "xpath=//div[contains(@data-item-marker,'ОГРН')]/../div/input"
+KPP = "xpath=//div[contains(@data-item-marker,'КПП')]/../div/input"
+OKPO = "xpath=//div[contains(@data-item-marker,'Код ОКПО')]/../div/input"
 
 #Categorization
 SelectOwnerLookup = "xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']"
@@ -76,6 +79,23 @@ AddTypeFilter = "xpath=.//*[@class='base-edit ts-box-sizing base-edit-with-right
 InputValueFilter = "xpath=.//*[@class='base-edit ts-box-sizing filter-simple-filter-edit']/input"
 ApplyFilter = "xpath=.//*[@class='t-btn-wrapper t-btn-no-text-padding t-btn-style-blue filter-element-with-right-space']/span"
 ListFilters = "xpath=.//*[@class='listview listview-scroll']/ul[1]//*[@data-item-marker='Валюта']"
+
+
+
+#AddNewContact
+AddNewContactBtn = "xpath=//span[@id='ContactProfileSchemaAddButtonButton-textEl']"
+ContactHeader = "xpath=//label[@id='MainHeaderSchemaPageHeaderCaptionLabel']"
+NameNewContact = "xpath=//input[@id='ContactPageV2AccountNameTextEdit-el']"
+MobilePhoneNewContact = "xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']"
+WorkPhoneNewContact = "xpath=//input[@id='ContactPageV2AccountPhoneTextEdit-el']"
+EmailNewContact = "xpath=//input[@id='ContactPageV2AccountEmailTextEdit-el']"
+WorkSpaceNewContact = "xpath=//ul[@id='ContactPageV2TabsTabPanel-tabpanel-items']/li[2]"
+JobTitleNewContact = "xpath=//input[@id='ContactPageV2JobComboBoxEdit-el']"
+SupervisorNewContact = "xpath=//li[@data-item-marker='Руководитель']"
+DepartmentNewContact = "xpath=//input[@id='ContactPageV2DepartmentComboBoxEdit-el']"
+AdministrationNewContact = "xpath=//li[@data-item-marker='Администрация']"
+
+
 
 
 # Payment Schedule Section

@@ -42,6 +42,29 @@ Click AddСounterpartyBtn
     Click  ${AddСounterpartyBtn}
     Wait Until Page Contains Element  ${MiniPageHeader}  timeout=30
 
+Click AddPaymentDetailsBtn
+    Click  ${AddPaymentDetailsBtn}
+    Wait Until Page Contains Element  ${BIK}  timeout=30
+
+Click TypeAdress
+    Click  ${TypeAdress}
+    Wait Until Page Contains Element  ${Country}  timeout=30
+
+Click OwnerLookup
+    Click  ${OwnerLookup}
+    Wait Until Page Contains Element  ${Responsible}  timeout=30
+
+Click ResponsibleSaveBtn
+    Click  ${ResponsibleSaveBtn}
+    Wait Until Page Contains Element  ${MiniPageHeader}  timeout=30
+
+Click AddNewContactBtn
+    Click  ${AddNewContactBtn}
+    Wait Until Page Contains Element  ${ContactHeader}  timeout=30
+
+
+
+
 Input NameCounterparty
     Input Text  ${NameCounterpartyPH}  ${NameCounterparty}
 Input InnCounterparty
@@ -68,8 +91,44 @@ Input KPP
 Input OKPO
     Input Text  ${OKPO}  ${OKPOValue}
 
+Input BIK
+    Input Text  ${BIK}  ${BIKValue}
+
+Input AccountNumber
+    Input Text  ${AccountNumber}  ${AccountNumberValue}
+
+Input Country
+    Input Text  ${Country}  ${CountryValue}
+
+Input Region
+    Input Text  ${Region}  ${RegionValue}
+
+Input Area
+    Input Text  ${Area}  ${AreaValue}
+
+Input City
+    Input Text  ${City}  ${CityValue}
+
+Input AdressFromCity
+    Input Text  ${AdressFromCity}  ${AdressFromCityValue}
+
+Input NameNewContact
+    Input Text  ${NameNewContact}  ${NameNewContactValue}
+
+Input EmailNewContact
+    Input Text  ${EmailNewContact}  ${EmailNewContactValue}
+
+Input JobTitleNewContact
+    Input Text  ${JobTitleNewContact}  ${SupervisorNewContactValue}
+
+Input MobilePhoneNewContact
+    Input Text  ${MobilePhoneNewContact}  ${PhoneValue}
 
 
+
+
+Input ZipCode
+    Input Text  ${ZipCode}  ${ZipCodeValue}
 
 Add New Counterparty
      sleep    2s
@@ -85,27 +144,107 @@ Add New Counterparty
 
 Go Into Counterparty
     click element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
-    sleep    5s
-    Input Email
+    #sleep    7s
+    #Input Email
     sleep    2s
-    Click Element   ${Phone}
+    #Click Element   ${Phone}
+    #sleep    2s
+    #Input Phone
+    #sleep    2s
+    #Click Element    ${SaveButton}
+    #sleep    2s
+    ##############LegalInformation
+    #Input PublicName
+    #sleep    2s
+    #Input ShortName
+    #sleep    2s
+    #Input OGRN
+    #sleep    2s
+    #Input KPP
+    #sleep    2s
+    #Input OKPO
+    #sleep    2s
+    #Click Element    ${SaveButton}
+    ############PaymentDetails
+    #Click AddPaymentDetailsBtn
+    #Input BIK
+    #sleep    5s
+    #click element   xpath=//li[contains(@data-item-marker,'${BIKValue}')][1]
+    #Input AccountNumber
+    #sleep    5s
+    #Click Element    ${SaveButton}
+
+    ########################CountryLookup
+    #sleep    2s
+    #Click Element   ${AddAddressDetailsBtn}
+    #sleep    2s
+    #Click TypeAdress
+    #sleep    2s
+    #Input Country
+    #sleep    2s
+    #click element   xpath=//li[contains(@data-item-marker,'${CountryValue}')][1]
+    #sleep    2s
+    #Input Region
+    #sleep    2s
+#    click element   xpath=//li[contains(@data-item-marker,'${RegionValue}')][1]
+#    sleep    2s
+#    Input Area
+#    sleep    2s
+#    click element   xpath=//div[contains(@data-item-marker,'Район')]/ul/li[1]
+#    sleep    2s
+#    Input City
+#    sleep    2s
+#    click element   xpath=//div[contains(@data-item-marker,'Город')]/ul/li[1]
+#    sleep    2s
+#    Input AdressFromCity
+#    sleep    2s
+#    Input ZipCode
+#    sleep    2s
+#    Click Element    ${SaveButton}
+#    sleep    2s
+    ##########Categorization
+    #Click Element   ${SelectOwnerLookup}
+    #sleep    2s
+    #Click Element   ${SelectFromListOwnerLookup}
+    #sleep    2s
+    #Click OwnerLookup
+    #sleep    2s
+    #Click Element   ${Responsible}
+    #sleep    2s
+    #Click ResponsibleSaveBtn
+    ############AddNewContact
     sleep    2s
-    Input Phone
+    Click AddNewContactBtn
+#    sleep    2s
+#    Input NameNewContact
+#    sleep    2s
+#    Input EmailNewContact
+#    sleep    2s
+#    Click Element    ${WorkSpaceNewContact}
+#    sleep    2s
+#    Input JobTitleNewContact
+#    sleep    2s
+#    Click Element    ${SupervisorNewContact}
+#    sleep    2s
+#    Click Element    ${DepartmentNewContact}
+#    sleep    2s
+#    Click Element    ${AdministrationNewContact}
     sleep    2s
-    Click Element    ${SaveButton}
-    sleep    2s
-    #LegalInformation
-    Input PublicName
-    sleep    2s
-    Input ShortName
-    sleep    2s
-    Input OGRN
-    sleep    2s
-    Input KPP
-    sleep    2s
-    Input OKPO
-    sleep    2s
-    Click Element    ${SaveButton}
+    Input MobilePhoneNewContact
+    sleep    10s
+    #Click Element    ${MobilePhoneNewContact}
+    sleep    10s
+    Click Element    ${WorkPhoneNewContact}
+    sleep    10s
+
+
+
+
+
+
+
+
+
 
 #    @{element_list}=    get webelements     .//*[@class='listview listview-scroll']/ul[1]//*[@data-item-marker='       ']
 #    :FOR  ${element}    IN     @{element_list}
