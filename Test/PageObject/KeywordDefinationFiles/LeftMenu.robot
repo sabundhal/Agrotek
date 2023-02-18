@@ -30,5 +30,11 @@ Go Sales
 Click PaymentScheduleSection
     Click  ${PaymentScheduleSection}
 
+
 Click IntegrationLogSection
     Click  ${IntegrationLogSection}
+
+
+Click Сounterparty
+    Click  ${Сounterparty}
+    Wait Until Page Contains Element  ${AddСounterpartyBtn}  timeout=30

@@ -12,6 +12,9 @@ Input Password
 Click Login
     Click Element  ${LoginButton}
 
+Click CollapseBtnMenu
+    Click Element  ${CollapseBtnMenu}
+
 Auto Login
     Open Browser  ${URL}  Chrome
     Wait Until Page Contains Element  ${LoginButton}  timeout=30
@@ -19,3 +22,4 @@ Auto Login
     Input Password
     Click Login
     Wait Until Page Contains Element  ${MainHeaderLabel}  timeout=30
+    Click CollapseBtnMenu
