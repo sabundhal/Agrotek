@@ -124,6 +124,11 @@ Input JobTitleNewContact
 Input MobilePhoneNewContact
     Input Text  ${MobilePhoneNewContact}  ${PhoneValue}
 
+Press Our Key
+    [Arguments]    ${Key}   ${Num}    ${xpath}
+    FOR    ${index}    IN RANGE     ${Num}
+        Press Key   ${xpath}        ${Key}
+    END
 
 
 
@@ -232,8 +237,15 @@ Go Into Counterparty
     sleep    2s
     Click Element    ${MobilePhoneNewContact}
     sleep    5s
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
+    Press Our Key    \ue012    14    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
+    sleep    5s
+    Press Our Key    \ue023    10    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
+    sleep    5s
+    Input MobilePhoneNewContact
+    sleep    5s
+    Click Element    ${WorkPhoneNewContact}
+    sleep    10s
+#
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
@@ -259,71 +271,7 @@ Go Into Counterparty
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue021
 
 
-    sleep    5s
-    Input MobilePhoneNewContact
-    sleep    5s
-    Click Element    ${WorkPhoneNewContact}
-    sleep    10s
 
-
-
-
-
-
-
-
-
-
-#    @{element_list}=    get webelements     .//*[@class='listview listview-scroll']/ul[1]//*[@data-item-marker='       ']
-#    :FOR  ${element}    IN     @{element_list}
-#
-
-#    ${AddType}=  Get Element Attribute     ${AddTypeFilter}    id
-#    Wait Until Element Is Visible   ${AddType}  timeout=10
-#    click element    ${AddType}
-#    set focus to element     ${AddType}
-#    Input Text  ${AddType}  ${TypeFilter}
-#    Press Keys  None  ENTER
-#            sleep    19999s
-#    ${InputValue}=  Get Element Attribute     ${InputValueFilter}    id
-#    Wait Until Element Is Visible   ${InputValue}  timeout=10
-#    Input Text  ${InputValue}  ${ValueFilter}
-#    Press Keys  None  ENTER
-#    ${Apply}=  Get Element Attribute     ${ApplyFilter}    id
-#    Apply Filter    ${Apply}
-
-
-
-
-#    Click Add Type Filter
-#    click element  css:[data-item-marker='${TypeFilter}']
-#    Click Input Value Filter
-#    click element  css:[data-item-marker='${ValueFilter}']
-
-
-#${common xpath}    xpath=//label[contains(text(), '{0}')]
-#
-#${text to be replaced}    my name
-#
-#${final xpath}    Evaluate    "${common xpath}".format("${text to be replaced}")
-#
-#log ${final xpath}
-#
-#
-#Section Filter Remove
-#    Wait Until Page Contains Element  ${TagFilterAddButton}  timeout=60
-#    Wait Until Element Is Visible   ${TagFilterAddButton}  timeout=60
-#    # находим все элементы по локатору и добавляем в массив
-#    ${webElements} =    Get WebElements     ${FilterRemoveButton}
-#    FOR    ${webElement}    IN    @{webElements}
-#        # достаем из массива элемент и получаем атрибут
-#        ${locatorAttribute}=  Get Element Attribute    ${webElement}    id
-#        Click  ${locatorAttribute}
-#    END
-#    # проверяем что фильтров больше нет
-#    ${countFilter}=    get element count     ${FilterRemoveButton}
-#    Should Be Equal As Integers  0  ${countFilter}
-#
 
 
 
