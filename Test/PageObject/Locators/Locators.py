@@ -63,7 +63,7 @@ OKPO = "xpath=//div[contains(@data-item-marker,'Код ОКПО')]/../div/input"
 SelectOwnerLookup1 = "xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']/../input"
 #SelectOwnerLookup2 = "xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']"
 SelectFromListOwnerLookup = "xpath=//li[contains(@data-item-marker,'ОП Воронеж')]"
-OwnerLookup1 = "xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-el']/../div[1]"
+OwnerLookup1 = "xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-el']/.."
 OwnerLookup2 = "xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-right-icon-wrapper']"
 Responsible = "xpath=//div[@id='grid-grid-wrap']//descendant::div[8]/.."
 ResponsibleSaveBtn = "xpath=//*[@data-tag='SelectButton']"
@@ -87,6 +87,7 @@ ListFilters = "xpath=.//*[@class='listview listview-scroll']/ul[1]//*[@data-item
 
 
 #AddNewContact
+CloseBtn = "xpath=//span[@data-item-marker='CloseButton']"
 AddNewContactBtn = "xpath=//span[@id='ContactProfileSchemaAddButtonButton-textEl']"
 ContactHeader = "xpath=//label[@id='MainHeaderSchemaPageHeaderCaptionLabel']"
 NameNewContact = "xpath=//input[@id='ContactPageV2AccountNameTextEdit-el']"

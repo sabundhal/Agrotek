@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.9 on darwin)" generated="20230220 15:06:07.467" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.8.9 on darwin)" generated="20230220 16:30:25.323" rpa="false" schemaversion="3">
 <suite id="s1" name="Agrotek3" source="/Users/uliaradnova/PycharmProjects/Agrotek3">
 <suite id="s1-s1" name="Test" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test">
 <suite id="s1-s1-s1" name="Resources" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources">
@@ -11,156 +11,1152 @@
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230220 15:06:07.943" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
-<status status="PASS" starttime="20230220 15:06:07.943" endtime="20230220 15:06:13.521"/>
+<msg timestamp="20230220 16:30:25.620" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
+<status status="PASS" starttime="20230220 16:30:25.620" endtime="20230220 16:30:28.168"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230220 15:06:13.521" endtime="20230220 15:06:41.920"/>
+<status status="PASS" starttime="20230220 16:30:28.174" endtime="20230220 16:30:31.375"/>
 </kw>
 <kw name="Input Username" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginUsernameInputBox}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230220 15:06:41.922" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
-<status status="PASS" starttime="20230220 15:06:41.921" endtime="20230220 15:06:42.230"/>
+<msg timestamp="20230220 16:30:31.376" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
+<status status="PASS" starttime="20230220 16:30:31.376" endtime="20230220 16:30:31.524"/>
 </kw>
-<status status="PASS" starttime="20230220 15:06:41.921" endtime="20230220 15:06:42.230"/>
+<status status="PASS" starttime="20230220 16:30:31.375" endtime="20230220 16:30:31.524"/>
 </kw>
 <kw name="Input Password" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginPasswordInputBox}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230220 15:06:42.232" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
-<status status="PASS" starttime="20230220 15:06:42.231" endtime="20230220 15:06:42.384"/>
+<msg timestamp="20230220 16:30:31.525" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
+<status status="PASS" starttime="20230220 16:30:31.524" endtime="20230220 16:30:31.596"/>
 </kw>
-<status status="PASS" starttime="20230220 15:06:42.230" endtime="20230220 15:06:42.385"/>
+<status status="PASS" starttime="20230220 16:30:31.524" endtime="20230220 16:30:31.596"/>
 </kw>
 <kw name="Click Login" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230220 15:06:42.387" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
-<status status="PASS" starttime="20230220 15:06:42.386" endtime="20230220 15:06:42.569"/>
+<msg timestamp="20230220 16:30:31.597" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
+<status status="PASS" starttime="20230220 16:30:31.597" endtime="20230220 16:30:31.663"/>
 </kw>
-<status status="PASS" starttime="20230220 15:06:42.385" endtime="20230220 15:06:42.569"/>
+<status status="PASS" starttime="20230220 16:30:31.597" endtime="20230220 16:30:31.663"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${MainHeaderLabel}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<msg timestamp="20230220 15:07:13.081" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230220 15:07:13.082" level="FAIL">Element 'id:MainHeaderSchemaCaptionValueLabel' did not appear in 30 seconds.</msg>
-<status status="FAIL" starttime="20230220 15:06:42.569" endtime="20230220 15:07:13.103"/>
+<status status="PASS" starttime="20230220 16:30:31.664" endtime="20230220 16:30:38.907"/>
 </kw>
 <kw name="Click CollapseBtnMenu" library="LoginPage">
-<status status="NOT RUN" starttime="20230220 15:07:13.103" endtime="20230220 15:07:13.103"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CollapseBtnMenu}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:30:38.908" level="INFO">Clicking element 'id:collapse-button-imageEl'.</msg>
+<status status="PASS" starttime="20230220 16:30:38.907" endtime="20230220 16:30:38.988"/>
 </kw>
-<status status="FAIL" starttime="20230220 15:06:07.942" endtime="20230220 15:07:13.104"/>
+<status status="PASS" starttime="20230220 16:30:38.907" endtime="20230220 16:30:38.989"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:25.619" endtime="20230220 16:30:38.989"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.104" endtime="20230220 15:07:13.104"/>
+<msg timestamp="20230220 16:30:40.990" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:30:38.989" endtime="20230220 16:30:40.990"/>
 </kw>
 <kw name="When Go Sales" library="LeftMenu">
-<status status="NOT RUN" starttime="20230220 15:07:13.105" endtime="20230220 15:07:13.105"/>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Label}</var>
+<arg>${TextMenu}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:30:41.137" level="INFO">${Label} = Студия</msg>
+<status status="PASS" starttime="20230220 16:30:40.991" endtime="20230220 16:30:41.137"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;Студия&quot; == &quot;${Label}&quot;">
+<kw name="Click" library="LeftMenu">
+<arg>${TopMenu}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:30:41.139" endtime="20230220 16:30:41.153"/>
+</kw>
+<msg timestamp="20230220 16:30:41.153" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:30:41.138" endtime="20230220 16:30:41.153"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:30:41.154" level="INFO">Clicking element 'id:top-menu-workplace-button-container'.</msg>
+<status status="PASS" starttime="20230220 16:30:41.153" endtime="20230220 16:30:41.206"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:41.153" endtime="20230220 16:30:41.206"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:41.138" endtime="20230220 16:30:41.207"/>
+</kw>
+<kw name="Click" library="LeftMenu">
+<arg>${Sales}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:30:41.207" endtime="20230220 16:30:41.225"/>
+</kw>
+<msg timestamp="20230220 16:30:41.225" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:30:41.207" endtime="20230220 16:30:41.225"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:30:41.226" level="INFO">Clicking element 'css:[data-item-marker="Продажи"]'.</msg>
+<status status="PASS" starttime="20230220 16:30:41.226" endtime="20230220 16:30:41.272"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:41.225" endtime="20230220 16:30:41.272"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:41.207" endtime="20230220 16:30:41.272"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:41.137" endtime="20230220 16:30:41.272"/>
+</branch>
+<status status="PASS" starttime="20230220 16:30:41.137" endtime="20230220 16:30:41.272"/>
+</if>
+<status status="PASS" starttime="20230220 16:30:40.991" endtime="20230220 16:30:41.272"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.105" endtime="20230220 15:07:13.105"/>
+<msg timestamp="20230220 16:30:43.275" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:30:41.273" endtime="20230220 16:30:43.276"/>
 </kw>
 <kw name="When Click Сounterparty" library="LeftMenu">
-<status status="NOT RUN" starttime="20230220 15:07:13.106" endtime="20230220 15:07:13.106"/>
+<kw name="Click" library="LeftMenu">
+<arg>${Сounterparty}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:30:43.279" endtime="20230220 16:30:43.300"/>
+</kw>
+<msg timestamp="20230220 16:30:43.300" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:30:43.279" endtime="20230220 16:30:43.301"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:30:43.303" level="INFO">Clicking element 'id:sidebar-item-text-4'.</msg>
+<status status="PASS" starttime="20230220 16:30:43.302" endtime="20230220 16:30:43.356"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:43.301" endtime="20230220 16:30:43.356"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:43.277" endtime="20230220 16:30:43.357"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${AddСounterpartyBtn}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:30:43.357" endtime="20230220 16:30:44.966"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:43.276" endtime="20230220 16:30:44.967"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.106" endtime="20230220 15:07:13.106"/>
+<msg timestamp="20230220 16:30:46.968" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:30:44.967" endtime="20230220 16:30:46.968"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:30:48.970" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:30:46.968" endtime="20230220 16:30:48.970"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.106" endtime="20230220 15:07:13.106"/>
+<msg timestamp="20230220 16:30:53.973" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230220 16:30:48.970" endtime="20230220 16:30:53.973"/>
 </kw>
 <kw name="When Go Into Counterparty" library="Counterparty">
-<status status="NOT RUN" starttime="20230220 15:07:13.107" endtime="20230220 15:07:13.107"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:30:53.976" level="INFO">Clicking element 'xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='j_Test_New6']'.</msg>
+<status status="PASS" starttime="20230220 16:30:53.975" endtime="20230220 16:30:54.127"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:01.129" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20230220 16:30:54.127" endtime="20230220 16:31:01.129"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.107" endtime="20230220 15:07:13.107"/>
+<msg timestamp="20230220 16:31:03.131" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:01.129" endtime="20230220 16:31:03.132"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.107" endtime="20230220 15:07:13.108"/>
+<msg timestamp="20230220 16:31:05.136" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:03.133" endtime="20230220 16:31:05.136"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.108" endtime="20230220 15:07:13.108"/>
+<msg timestamp="20230220 16:31:07.139" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:05.137" endtime="20230220 16:31:07.139"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:14.142" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:07.140" endtime="20230220 16:31:14.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:19.146" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:14.143" endtime="20230220 16:31:19.147"/>
+</kw>
+<status status="PASS" starttime="20230220 16:30:53.974" endtime="20230220 16:31:19.147"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.108" endtime="20230220 15:07:13.108"/>
+<msg timestamp="20230220 16:31:21.149" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:19.148" endtime="20230220 16:31:21.150"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:23.152" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:21.150" endtime="20230220 16:31:23.153"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:25.156" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:23.153" endtime="20230220 16:31:25.156"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:27.158" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:25.157" endtime="20230220 16:31:27.159"/>
 </kw>
 <kw name="When Filling Categorization" library="Counterparty">
-<status status="NOT RUN" starttime="20230220 15:07:13.108" endtime="20230220 15:07:13.108"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectOwnerLookup1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:27.162" level="INFO">Clicking element 'xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']/../input'.</msg>
+<status status="PASS" starttime="20230220 16:31:27.160" endtime="20230220 16:31:27.310"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.109" endtime="20230220 15:07:13.109"/>
+<msg timestamp="20230220 16:31:29.312" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:27.310" endtime="20230220 16:31:29.312"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:31.313" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:29.312" endtime="20230220 16:31:31.314"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectFromListOwnerLookup}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:31.316" level="INFO">Clicking element 'xpath=//li[contains(@data-item-marker,'ОП Воронеж')]'.</msg>
+<status status="PASS" starttime="20230220 16:31:31.314" endtime="20230220 16:31:31.379"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:33.380" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:31.379" endtime="20230220 16:31:33.380"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${OwnerLookup1}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230220 16:31:33.381" endtime="20230220 16:31:33.681"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:35.682" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:33.681" endtime="20230220 16:31:35.682"/>
+</kw>
+<kw name="Click OwnerLookup" library="Counterparty">
+<kw name="Click" library="Counterparty">
+<arg>${OwnerLookup1}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:35.685" endtime="20230220 16:31:35.699"/>
+</kw>
+<msg timestamp="20230220 16:31:35.700" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:31:35.685" endtime="20230220 16:31:35.700"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:35.701" level="INFO">Clicking element 'xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-el']/..'.</msg>
+<status status="PASS" starttime="20230220 16:31:35.700" endtime="20230220 16:31:35.749"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:35.700" endtime="20230220 16:31:35.749"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:35.684" endtime="20230220 16:31:35.749"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:37.752" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:35.749" endtime="20230220 16:31:37.752"/>
+</kw>
+<kw name="Click" library="Counterparty">
+<arg>${OwnerLookup2}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:37.753" endtime="20230220 16:31:37.769"/>
+</kw>
+<msg timestamp="20230220 16:31:37.769" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:31:37.753" endtime="20230220 16:31:37.769"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:37.770" level="INFO">Clicking element 'xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-right-icon-wrapper']'.</msg>
+<status status="PASS" starttime="20230220 16:31:37.770" endtime="20230220 16:31:37.897"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:37.769" endtime="20230220 16:31:37.897"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:37.752" endtime="20230220 16:31:37.898"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Responsible}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:37.898" endtime="20230220 16:31:38.410"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:35.683" endtime="20230220 16:31:38.410"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:40.412" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:38.411" endtime="20230220 16:31:40.413"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Responsible}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:40.415" level="INFO">Clicking element 'xpath=//div[@id='grid-grid-wrap']//descendant::div[8]/..'.</msg>
+<status status="PASS" starttime="20230220 16:31:40.413" endtime="20230220 16:31:40.487"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:42.489" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:40.488" endtime="20230220 16:31:42.489"/>
+</kw>
+<kw name="Click ResponsibleSaveBtn" library="Counterparty">
+<kw name="Click" library="Counterparty">
+<arg>${ResponsibleSaveBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:42.492" endtime="20230220 16:31:42.511"/>
+</kw>
+<msg timestamp="20230220 16:31:42.511" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:31:42.491" endtime="20230220 16:31:42.511"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:42.512" level="INFO">Clicking element 'xpath=//*[@data-tag='SelectButton']'.</msg>
+<status status="PASS" starttime="20230220 16:31:42.512" endtime="20230220 16:31:42.612"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:42.511" endtime="20230220 16:31:42.612"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:42.490" endtime="20230220 16:31:42.612"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${AddNewContactBtn}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:42.612" endtime="20230220 16:31:42.625"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${CloseBtn}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:42.625" endtime="20230220 16:31:42.635"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:42.489" endtime="20230220 16:31:42.635"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:27.160" endtime="20230220 16:31:42.635"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:44.638" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:42.636" endtime="20230220 16:31:44.638"/>
 </kw>
 <kw name="Filling AddNewContact" library="Counterparty">
-<status status="NOT RUN" starttime="20230220 15:07:13.109" endtime="20230220 15:07:13.109"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:49.641" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:44.640" endtime="20230220 16:31:49.641"/>
+</kw>
+<kw name="Click AddNewContactBtn" library="Counterparty">
+<kw name="Click" library="Counterparty">
+<arg>${AddNewContactBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:49.644" endtime="20230220 16:31:49.657"/>
+</kw>
+<msg timestamp="20230220 16:31:49.658" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230220 16:31:49.644" endtime="20230220 16:31:49.658"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:49.659" level="INFO">Clicking element 'xpath=//span[@id='ContactProfileSchemaAddButtonButton-textEl']'.</msg>
+<status status="PASS" starttime="20230220 16:31:49.658" endtime="20230220 16:31:49.782"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:49.658" endtime="20230220 16:31:49.782"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:49.642" endtime="20230220 16:31:49.782"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ContactHeader}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:49.782" endtime="20230220 16:31:49.796"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${NameNewContact}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230220 16:31:49.796" endtime="20230220 16:31:51.619"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:49.642" endtime="20230220 16:31:51.619"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:31:56.619" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:51.619" endtime="20230220 16:31:56.620"/>
+</kw>
+<kw name="Input NameNewContact" library="Counterparty">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${NameNewContact}</arg>
+<arg>${NameNewContactValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:56.622" level="INFO">Typing text 'Тест_Контакт_6' into text field 'xpath=//input[@id='ContactPageV2AccountNameTextEdit-el']'.</msg>
+<status status="PASS" starttime="20230220 16:31:56.621" endtime="20230220 16:31:56.781"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:56.620" endtime="20230220 16:31:56.781"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.109" endtime="20230220 15:07:13.109"/>
+<msg timestamp="20230220 16:31:58.782" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:56.781" endtime="20230220 16:31:58.782"/>
+</kw>
+<kw name="Input EmailNewContact" library="Counterparty">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EmailNewContact}</arg>
+<arg>${EmailNewContactValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230220 16:31:58.785" level="INFO">Typing text 'test.avtotest.newcoantact.6@yandex.ru' into text field 'xpath=//input[@id='ContactPageV2AccountEmailTextEdit-el']'.</msg>
+<status status="PASS" starttime="20230220 16:31:58.784" endtime="20230220 16:31:58.914"/>
+</kw>
+<status status="PASS" starttime="20230220 16:31:58.783" endtime="20230220 16:31:58.914"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5000s</arg>
+<arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230220 15:07:13.110" endtime="20230220 15:07:13.110"/>
+<msg timestamp="20230220 16:32:00.916" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:31:58.914" endtime="20230220 16:32:00.916"/>
 </kw>
-<tag>Smoke</tag>
-<status status="FAIL" starttime="20230220 15:06:07.941" endtime="20230220 15:07:13.110">Element 'id:MainHeaderSchemaCaptionValueLabel' did not appear in 30 seconds.</status>
-</test>
-<doc>Login</doc>
-<status status="FAIL" starttime="20230220 15:06:07.523" endtime="20230220 15:07:13.113"/>
-</suite>
-<status status="FAIL" starttime="20230220 15:06:07.521" endtime="20230220 15:07:13.115"/>
-</suite>
-<status status="FAIL" starttime="20230220 15:06:07.519" endtime="20230220 15:07:13.117"/>
-</suite>
-<status status="FAIL" starttime="20230220 15:06:07.516" endtime="20230220 15:07:13.118"/>
-</suite>
-<status status="FAIL" starttime="20230220 15:06:07.470" endtime="20230220 15:07:13.120"/>
-</suite>
-<statistics>
-<total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="0" fail="1" skip="0">Smoke</stat>
-</tag>
-<suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Agrotek3">Agrotek3</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">Agrotek3.Test</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Resources">Agrotek3.Test.Resources</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="TestCase">Agrotek3.Test.Resources.TestCase</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Login">Agrotek3.Test.Resources.TestCase.Login</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${WorkSpaceNewContact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:00.918" level="INFO">Clicking element 'xpath=//ul[@id='ContactPageV2TabsTabPanel-tabpanel-items']/li[2]'.</msg>
+<status status="PASS" starttime="20230220 16:32:00.917" endtime="20230220 16:32:01.039"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:03.040" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:01.039" endtime="20230220 16:32:03.040"/>
+</kw>
+<kw name="Input JobTitleNewContact" library="Counterparty">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${JobTitleNewContact}</arg>
+<arg>${SupervisorNewContactValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:03.043" level="INFO">Typing text 'Руководитель' into text field 'xpath=//input[@id='ContactPageV2JobComboBoxEdit-el']'.</msg>
+<status status="PASS" starttime="20230220 16:32:03.041" endtime="20230220 16:32:03.163"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:03.041" endtime="20230220 16:32:03.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:05.165" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:03.164" endtime="20230220 16:32:05.165"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SupervisorNewContact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:05.167" level="INFO">Clicking element 'xpath=//li[@data-item-marker='Руководитель']'.</msg>
+<status status="PASS" starttime="20230220 16:32:05.166" endtime="20230220 16:32:05.216"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:07.218" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:05.216" endtime="20230220 16:32:07.219"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DepartmentNewContact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:07.221" level="INFO">Clicking element 'xpath=//input[@id='ContactPageV2DepartmentComboBoxEdit-el']'.</msg>
+<status status="PASS" starttime="20230220 16:32:07.219" endtime="20230220 16:32:07.283"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:09.283" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:07.283" endtime="20230220 16:32:09.284"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AdministrationNewContact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:09.285" level="INFO">Clicking element 'xpath=//li[@data-item-marker='Администрация']'.</msg>
+<status status="PASS" starttime="20230220 16:32:09.284" endtime="20230220 16:32:09.339"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:11.340" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:09.339" endtime="20230220 16:32:11.340"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MobilePhoneNewContact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:11.342" level="INFO">Clicking element 'xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']'.</msg>
+<status status="PASS" starttime="20230220 16:32:11.341" endtime="20230220 16:32:11.406"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:13.408" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:11.406" endtime="20230220 16:32:13.409"/>
+</kw>
+<kw name="Press Our Key" library="Counterparty">
+<arg>\ue012</arg>
+<arg>14</arg>
+<arg>xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']</arg>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>${Num}</value>
+<iter>
+<var name="${index}">0</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.412" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.411" endtime="20230220 16:32:13.446"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.411" endtime="20230220 16:32:13.446"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.446" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.446" endtime="20230220 16:32:13.475"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.446" endtime="20230220 16:32:13.475"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.475" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.475" endtime="20230220 16:32:13.499"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.475" endtime="20230220 16:32:13.499"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.499" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.499" endtime="20230220 16:32:13.522"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.499" endtime="20230220 16:32:13.522"/>
+</iter>
+<iter>
+<var name="${index}">4</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.522" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.522" endtime="20230220 16:32:13.544"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.522" endtime="20230220 16:32:13.544"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.545" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.545" endtime="20230220 16:32:13.569"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.545" endtime="20230220 16:32:13.569"/>
+</iter>
+<iter>
+<var name="${index}">6</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.570" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.570" endtime="20230220 16:32:13.593"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.569" endtime="20230220 16:32:13.593"/>
+</iter>
+<iter>
+<var name="${index}">7</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.593" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.593" endtime="20230220 16:32:13.615"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.593" endtime="20230220 16:32:13.615"/>
+</iter>
+<iter>
+<var name="${index}">8</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.616" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.616" endtime="20230220 16:32:13.638"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.615" endtime="20230220 16:32:13.638"/>
+</iter>
+<iter>
+<var name="${index}">9</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.639" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.639" endtime="20230220 16:32:13.660"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.638" endtime="20230220 16:32:13.660"/>
+</iter>
+<iter>
+<var name="${index}">10</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.661" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.661" endtime="20230220 16:32:13.682"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.660" endtime="20230220 16:32:13.682"/>
+</iter>
+<iter>
+<var name="${index}">11</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.682" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.682" endtime="20230220 16:32:13.701"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.682" endtime="20230220 16:32:13.701"/>
+</iter>
+<iter>
+<var name="${index}">12</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.702" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.701" endtime="20230220 16:32:13.719"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.701" endtime="20230220 16:32:13.719"/>
+</iter>
+<iter>
+<var name="${index}">13</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:13.719" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:13.719" endtime="20230220 16:32:13.739"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:13.719" endtime="20230220 16:32:13.739"/>
+</iter>
+<status status="PASS" starttime="20230220 16:32:13.410" endtime="20230220 16:32:13.739"/>
+</for>
+<status status="PASS" starttime="20230220 16:32:13.409" endtime="20230220 16:32:13.739"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:15.740" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:13.739" endtime="20230220 16:32:15.740"/>
+</kw>
+<kw name="Press Our Key" library="Counterparty">
+<arg>\ue023</arg>
+<arg>10</arg>
+<arg>xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']</arg>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>${Num}</value>
+<iter>
+<var name="${index}">0</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.742" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.742" endtime="20230220 16:32:15.776"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.742" endtime="20230220 16:32:15.776"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.776" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.776" endtime="20230220 16:32:15.802"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.776" endtime="20230220 16:32:15.802"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.803" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.803" endtime="20230220 16:32:15.828"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.802" endtime="20230220 16:32:15.828"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.829" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.829" endtime="20230220 16:32:15.857"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.829" endtime="20230220 16:32:15.857"/>
+</iter>
+<iter>
+<var name="${index}">4</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.857" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.857" endtime="20230220 16:32:15.885"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.857" endtime="20230220 16:32:15.885"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.885" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.885" endtime="20230220 16:32:15.911"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.885" endtime="20230220 16:32:15.911"/>
+</iter>
+<iter>
+<var name="${index}">6</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.911" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.911" endtime="20230220 16:32:15.940"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.911" endtime="20230220 16:32:15.940"/>
+</iter>
+<iter>
+<var name="${index}">7</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.940" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.940" endtime="20230220 16:32:15.966"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.940" endtime="20230220 16:32:15.966"/>
+</iter>
+<iter>
+<var name="${index}">8</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.966" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.966" endtime="20230220 16:32:15.993"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.966" endtime="20230220 16:32:15.993"/>
+</iter>
+<iter>
+<var name="${index}">9</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:15.994" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:15.994" endtime="20230220 16:32:16.018"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:15.994" endtime="20230220 16:32:16.018"/>
+</iter>
+<status status="PASS" starttime="20230220 16:32:15.741" endtime="20230220 16:32:16.018"/>
+</for>
+<status status="PASS" starttime="20230220 16:32:15.740" endtime="20230220 16:32:16.018"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:18.019" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:16.018" endtime="20230220 16:32:18.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${WorkPhoneNewContact}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230220 16:32:18.021" level="INFO">Clicking element 'xpath=//input[@id='ContactPageV2AccountPhoneTextEdit-el']'.</msg>
+<status status="PASS" starttime="20230220 16:32:18.020" endtime="20230220 16:32:18.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:20.111" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:18.108" endtime="20230220 16:32:20.111"/>
+</kw>
+<kw name="Press Our Key" library="Counterparty">
+<arg>\ue012</arg>
+<arg>14</arg>
+<arg>xpath=//input[@id='ContactPageV2AccountPhoneTextEdit-el']</arg>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>${Num}</value>
+<iter>
+<var name="${index}">0</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.114" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.113" endtime="20230220 16:32:20.225"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.113" endtime="20230220 16:32:20.225"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.225" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.225" endtime="20230220 16:32:20.245"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.225" endtime="20230220 16:32:20.245"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.245" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.245" endtime="20230220 16:32:20.264"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.245" endtime="20230220 16:32:20.264"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.264" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.264" endtime="20230220 16:32:20.283"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.264" endtime="20230220 16:32:20.283"/>
+</iter>
+<iter>
+<var name="${index}">4</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.283" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.283" endtime="20230220 16:32:20.301"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.283" endtime="20230220 16:32:20.301"/>
+</iter>
+<iter>
+<var name="${index}">5</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.301" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.301" endtime="20230220 16:32:20.319"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.301" endtime="20230220 16:32:20.319"/>
+</iter>
+<iter>
+<var name="${index}">6</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.320" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.320" endtime="20230220 16:32:20.338"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.319" endtime="20230220 16:32:20.338"/>
+</iter>
+<iter>
+<var name="${index}">7</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.338" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.338" endtime="20230220 16:32:20.356"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.338" endtime="20230220 16:32:20.356"/>
+</iter>
+<iter>
+<var name="${index}">8</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.357" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.356" endtime="20230220 16:32:20.375"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.356" endtime="20230220 16:32:20.375"/>
+</iter>
+<iter>
+<var name="${index}">9</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.376" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.376" endtime="20230220 16:32:20.395"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.376" endtime="20230220 16:32:20.395"/>
+</iter>
+<iter>
+<var name="${index}">10</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.395" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.395" endtime="20230220 16:32:20.413"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.395" endtime="20230220 16:32:20.413"/>
+</iter>
+<iter>
+<var name="${index}">11</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.413" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.413" endtime="20230220 16:32:20.431"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.413" endtime="20230220 16:32:20.431"/>
+</iter>
+<iter>
+<var name="${index}">12</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.432" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.432" endtime="20230220 16:32:20.451"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.432" endtime="20230220 16:32:20.451"/>
+</iter>
+<iter>
+<var name="${index}">13</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:20.451" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:20.451" endtime="20230220 16:32:20.468"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:20.451" endtime="20230220 16:32:20.468"/>
+</iter>
+<status status="PASS" starttime="20230220 16:32:20.112" endtime="20230220 16:32:20.468"/>
+</for>
+<status status="PASS" starttime="20230220 16:32:20.111" endtime="20230220 16:32:20.469"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230220 16:32:22.470" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230220 16:32:20.469" endtime="20230220 16:32:22.470"/>
+</kw>
+<kw name="Press Our Key" library="Counterparty">
+<arg>\ue022</arg>
+<arg>10</arg>
+<arg>xpath=//input[@id='ContactPageV2AccountPhoneTextEdit-el']</arg>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>${Num}</value>
+<iter>
+<var name="${index}">0</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:22.472" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:22.472" endtime="20230220 16:32:22.504"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:22.472" endtime="20230220 16:32:22.504"/>
+</iter>
+<iter>
+<var name="${index}">1</var>
+<kw name="Press Key" library="SeleniumLibrary">
+<arg>${xpath}</arg>
+<arg>${Key}</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<msg timestamp="20230220 16:32:22.504" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<status status="PASS" starttime="20230220 16:32:22.504" endtime="20230220 16:32:22.528"/>
+</kw>
+<status status="PASS" starttime="20230220 16:32:22.504" endtime="20230220 16:32:22.528"/>
+</iter>
+<iter>
+<var name="${index}">2</var>

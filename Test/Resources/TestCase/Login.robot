@@ -17,7 +17,7 @@ Login to Agrotek
     When Click Сounterparty
      sleep    2s
     #When Click AddСounterpartyBtn
-     #sleep    2s
+    sleep    2s
     #When Add New Counterparty
     sleep    5s
     When Go Into Counterparty

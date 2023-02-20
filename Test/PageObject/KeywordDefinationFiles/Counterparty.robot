@@ -58,11 +58,13 @@ Click OwnerLookup
 
 Click ResponsibleSaveBtn
     Click  ${ResponsibleSaveBtn}
-    #Wait Until Page Contains Element  ${MiniPageHeader}  timeout=30
+    Wait Until Page Contains Element  ${AddNewContactBtn}  timeout=30
+    Wait Until Page Contains Element  ${CloseBtn}  timeout=30
 
 Click AddNewContactBtn
     Click  ${AddNewContactBtn}
     Wait Until Page Contains Element  ${ContactHeader}  timeout=30
+    Wait Until Page Contains Element  ${NameNewContact}  timeout=30
 
 
 
@@ -122,9 +124,6 @@ Input EmailNewContact
 Input JobTitleNewContact
     Input Text  ${JobTitleNewContact}  ${SupervisorNewContactValue}
 
-Input MobilePhoneNewContact
-    Input Text  ${MobilePhoneNewContact}  ${PhoneValue}
-
 Press Our Key
     [Arguments]    ${Key}   ${Num}    ${xpath}
     FOR    ${index}    IN RANGE     ${Num}
@@ -151,15 +150,15 @@ Add New Counterparty
 Go Into Counterparty
     click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
     sleep    7s
-    Input Email
+    #Input Email
     sleep    2s
-    Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
+    #Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
     sleep    2s
-    Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    #Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
     sleep    2s
-    Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    #Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
     sleep    7s
-    Click Element    ${SaveButton}
+    #Click Element    ${SaveButton}
     sleep    5s
 
 Filling LegalInformation
@@ -219,6 +218,8 @@ Filling Categorization
     sleep    2s
     Click Element   ${SelectFromListOwnerLookup}
     sleep    2s
+    Scroll Element Into View   ${OwnerLookup1}
+    sleep    2s
     Click OwnerLookup
     sleep    2s
     Click Element   ${Responsible}
@@ -226,9 +227,9 @@ Filling Categorization
     Click ResponsibleSaveBtn
 
 Filling AddNewContact
-    sleep    2s
+    sleep    5s
     Click AddNewContactBtn
-    sleep    2s
+    sleep    5s
     Input NameNewContact
     sleep    2s
     Input EmailNewContact
@@ -249,14 +250,15 @@ Filling AddNewContact
     sleep    2s
     Press Our Key    \ue023    10    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
     sleep    2s
-    Input MobilePhoneNewContact
-    sleep    2s
     Click Element    ${WorkPhoneNewContact}
-    Press Our Key    \ue012    14    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
     sleep    2s
-    Press Our Key    \ue022    10    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
+    Press Our Key    \ue012    14    xpath=//input[@id='ContactPageV2AccountPhoneTextEdit-el']
     sleep    2s
-
+    Press Our Key    \ue022    10    xpath=//input[@id='ContactPageV2AccountPhoneTextEdit-el']
+    sleep    2s
+    Click Element    ${SaveButton}
+    sleep    5s
+    Click Element    ${SaveButton}
 
 
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue023
