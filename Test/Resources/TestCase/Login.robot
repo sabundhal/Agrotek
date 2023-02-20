@@ -22,6 +22,19 @@ Login to Agrotek
     sleep    5s
     When Go Into Counterparty
     sleep    2s
+    #When Filling LegalInformation
+    sleep    2s
+    #When Filling PaymentDetails
+    sleep    2s
+    #When Filling CountryLookup
+    sleep    2s
+    When Filling Categorization
+    sleep    2s
+    Filling AddNewContact
+    sleep    2s
+
+
+
     sleep    5000s
     #When Close Browser
 

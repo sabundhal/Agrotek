@@ -1,642 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230219 18:37:46.527" rpa="false" schemaversion="3">
-<suite id="s1" name="Agrotek2" source="C:\Users\User\PycharmProjects\Agrotek2">
-<suite id="s1-s1" name="Test" source="C:\Users\User\PycharmProjects\Agrotek2\Test">
-<suite id="s1-s1-s1" name="Resources" source="C:\Users\User\PycharmProjects\Agrotek2\Test\Resources">
-<suite id="s1-s1-s1-s1" name="TestCase" source="C:\Users\User\PycharmProjects\Agrotek2\Test\Resources\TestCase">
-<suite id="s1-s1-s1-s1-s1" name="Login" source="C:\Users\User\PycharmProjects\Agrotek2\Test\Resources\TestCase\Login.robot">
+<robot generator="Robot 6.0.2 (Python 3.8.9 on darwin)" generated="20230220 15:06:07.467" rpa="false" schemaversion="3">
+<suite id="s1" name="Agrotek3" source="/Users/uliaradnova/PycharmProjects/Agrotek3">
+<suite id="s1-s1" name="Test" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test">
+<suite id="s1-s1-s1" name="Resources" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources">
+<suite id="s1-s1-s1-s1" name="TestCase" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources/TestCase">
+<suite id="s1-s1-s1-s1-s1" name="Login" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources/TestCase/Login.robot">
 <test id="s1-s1-s1-s1-s1-t1" name="Login to Agrotek" line="11">
 <kw name="When Auto Login" library="LoginPage">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230219 18:37:46.849" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
-<status status="PASS" starttime="20230219 18:37:46.848" endtime="20230219 18:37:48.820"/>
+<msg timestamp="20230220 15:06:07.943" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
+<status status="PASS" starttime="20230220 15:06:07.943" endtime="20230220 15:06:13.521"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230219 18:37:48.821" endtime="20230219 18:37:55.426"/>
+<status status="PASS" starttime="20230220 15:06:13.521" endtime="20230220 15:06:41.920"/>
 </kw>
 <kw name="Input Username" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginUsernameInputBox}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230219 18:37:55.427" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
-<status status="PASS" starttime="20230219 18:37:55.427" endtime="20230219 18:37:55.527"/>
+<msg timestamp="20230220 15:06:41.922" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
+<status status="PASS" starttime="20230220 15:06:41.921" endtime="20230220 15:06:42.230"/>
 </kw>
-<status status="PASS" starttime="20230219 18:37:55.426" endtime="20230219 18:37:55.528"/>
+<status status="PASS" starttime="20230220 15:06:41.921" endtime="20230220 15:06:42.230"/>
 </kw>
 <kw name="Input Password" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginPasswordInputBox}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230219 18:37:55.529" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
-<status status="PASS" starttime="20230219 18:37:55.528" endtime="20230219 18:37:55.622"/>
+<msg timestamp="20230220 15:06:42.232" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
+<status status="PASS" starttime="20230220 15:06:42.231" endtime="20230220 15:06:42.384"/>
 </kw>
-<status status="PASS" starttime="20230219 18:37:55.528" endtime="20230219 18:37:55.622"/>
+<status status="PASS" starttime="20230220 15:06:42.230" endtime="20230220 15:06:42.385"/>
 </kw>
 <kw name="Click Login" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:37:55.623" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
-<status status="PASS" starttime="20230219 18:37:55.623" endtime="20230219 18:37:55.679"/>
+<msg timestamp="20230220 15:06:42.387" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
+<status status="PASS" starttime="20230220 15:06:42.386" endtime="20230220 15:06:42.569"/>
 </kw>
-<status status="PASS" starttime="20230219 18:37:55.622" endtime="20230219 18:37:55.679"/>
+<status status="PASS" starttime="20230220 15:06:42.385" endtime="20230220 15:06:42.569"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${MainHeaderLabel}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230219 18:37:55.679" endtime="20230219 18:38:04.743"/>
+<msg timestamp="20230220 15:07:13.081" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230220 15:07:13.082" level="FAIL">Element 'id:MainHeaderSchemaCaptionValueLabel' did not appear in 30 seconds.</msg>
+<status status="FAIL" starttime="20230220 15:06:42.569" endtime="20230220 15:07:13.103"/>
 </kw>
 <kw name="Click CollapseBtnMenu" library="LoginPage">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${CollapseBtnMenu}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:04.744" level="INFO">Clicking element 'id:collapse-button-imageEl'.</msg>
-<status status="PASS" starttime="20230219 18:38:04.743" endtime="20230219 18:38:04.875"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.103" endtime="20230220 15:07:13.103"/>
 </kw>
-<status status="PASS" starttime="20230219 18:38:04.743" endtime="20230219 18:38:04.876"/>
-</kw>
-<status status="PASS" starttime="20230219 18:37:46.848" endtime="20230219 18:38:04.876"/>
+<status status="FAIL" starttime="20230220 15:06:07.942" endtime="20230220 15:07:13.104"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:06.890" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:04.876" endtime="20230219 18:38:06.890"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.104" endtime="20230220 15:07:13.104"/>
 </kw>
 <kw name="When Go Sales" library="LeftMenu">
-<kw name="Get Text" library="SeleniumLibrary">
-<var>${Label}</var>
-<arg>${TextMenu}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:07.940" level="INFO">${Label} = Продажи</msg>
-<status status="PASS" starttime="20230219 18:38:06.891" endtime="20230219 18:38:07.940"/>
-</kw>
-<if>
-<branch type="IF" condition="&quot;Студия&quot; == &quot;${Label}&quot;">
-<kw name="Click" library="LeftMenu">
-<arg>${TopMenu}</arg>
-<status status="NOT RUN" starttime="20230219 18:38:07.940" endtime="20230219 18:38:07.940"/>
-</kw>
-<kw name="Click" library="LeftMenu">
-<arg>${Sales}</arg>
-<status status="NOT RUN" starttime="20230219 18:38:07.940" endtime="20230219 18:38:07.941"/>
-</kw>
-<status status="NOT RUN" starttime="20230219 18:38:07.940" endtime="20230219 18:38:07.941"/>
-</branch>
-<status status="PASS" starttime="20230219 18:38:07.940" endtime="20230219 18:38:07.941"/>
-</if>
-<status status="PASS" starttime="20230219 18:38:06.890" endtime="20230219 18:38:07.941"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.105" endtime="20230220 15:07:13.105"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:09.957" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:07.941" endtime="20230219 18:38:09.957"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.105" endtime="20230220 15:07:13.105"/>
 </kw>
 <kw name="When Click Сounterparty" library="LeftMenu">
-<kw name="Click" library="LeftMenu">
-<arg>${Сounterparty}</arg>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${check_element}</var>
-<arg>Wait Until Page Contains Element</arg>
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230219 18:38:09.959" endtime="20230219 18:38:09.970"/>
-</kw>
-<msg timestamp="20230219 18:38:09.971" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230219 18:38:09.958" endtime="20230219 18:38:09.971"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${check_element}' == 'True'</arg>
-<arg>Click Element</arg>
-<arg>${Element}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:09.972" level="INFO">Clicking element 'id:sidebar-item-text-4'.</msg>
-<status status="PASS" starttime="20230219 18:38:09.971" endtime="20230219 18:38:10.025"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:09.971" endtime="20230219 18:38:10.025"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:09.958" endtime="20230219 18:38:10.025"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${AddСounterpartyBtn}</arg>
-<arg>timeout=30</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230219 18:38:10.025" endtime="20230219 18:38:12.078"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:09.957" endtime="20230219 18:38:12.078"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.106" endtime="20230220 15:07:13.106"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:14.094" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:12.078" endtime="20230219 18:38:14.094"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.106" endtime="20230220 15:07:13.106"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:19.099" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:14.094" endtime="20230219 18:38:19.099"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.106" endtime="20230220 15:07:13.106"/>
 </kw>
 <kw name="When Go Into Counterparty" library="Counterparty">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:19.100" level="INFO">Clicking element 'xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='j_Test_New5']'.</msg>
-<status status="PASS" starttime="20230219 18:38:19.100" endtime="20230219 18:38:19.211"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.107" endtime="20230220 15:07:13.107"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:21.213" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:19.211" endtime="20230219 18:38:21.213"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.107" endtime="20230220 15:07:13.107"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:23.229" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:21.213" endtime="20230219 18:38:23.229"/>
-</kw>
-<kw name="Click AddNewContactBtn" library="Counterparty">
-<kw name="Click" library="Counterparty">
-<arg>${AddNewContactBtn}</arg>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${check_element}</var>
-<arg>Wait Until Page Contains Element</arg>
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230219 18:38:23.230" endtime="20230219 18:38:23.245"/>
-</kw>
-<msg timestamp="20230219 18:38:23.245" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230219 18:38:23.230" endtime="20230219 18:38:23.245"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${check_element}' == 'True'</arg>
-<arg>Click Element</arg>
-<arg>${Element}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:23.247" level="INFO">Clicking element 'xpath=//span[@id='ContactProfileSchemaAddButtonButton-textEl']'.</msg>
-<status status="PASS" starttime="20230219 18:38:23.246" endtime="20230219 18:38:23.346"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:23.246" endtime="20230219 18:38:23.346"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:23.229" endtime="20230219 18:38:23.347"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${ContactHeader}</arg>
-<arg>timeout=30</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230219 18:38:23.347" endtime="20230219 18:38:23.369"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:23.229" endtime="20230219 18:38:23.369"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.107" endtime="20230220 15:07:13.108"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:25.374" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:23.370" endtime="20230219 18:38:25.374"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${MobilePhoneNewContact}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:25.375" level="INFO">Clicking element 'xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']'.</msg>
-<status status="PASS" starttime="20230219 18:38:25.374" endtime="20230219 18:38:25.551"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:30.556" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:25.551" endtime="20230219 18:38:30.556"/>
-</kw>
-<kw name="Press Our Key" library="Counterparty">
-<arg>\ue012</arg>
-<arg>14</arg>
-<arg>xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']</arg>
-<for flavor="IN RANGE">
-<var>${index}</var>
-<value>${Num}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.557" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.557" endtime="20230219 18:38:30.625"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.557" endtime="20230219 18:38:30.625"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.626" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.626" endtime="20230219 18:38:30.652"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.625" endtime="20230219 18:38:30.652"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.652" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.652" endtime="20230219 18:38:30.676"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.652" endtime="20230219 18:38:30.676"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.677" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.677" endtime="20230219 18:38:30.702"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.676" endtime="20230219 18:38:30.702"/>
-</iter>
-<iter>
-<var name="${index}">4</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.702" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.702" endtime="20230219 18:38:30.727"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.702" endtime="20230219 18:38:30.727"/>
-</iter>
-<iter>
-<var name="${index}">5</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.727" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.727" endtime="20230219 18:38:30.752"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.727" endtime="20230219 18:38:30.752"/>
-</iter>
-<iter>
-<var name="${index}">6</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.752" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.752" endtime="20230219 18:38:30.777"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.752" endtime="20230219 18:38:30.778"/>
-</iter>
-<iter>
-<var name="${index}">7</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.778" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.778" endtime="20230219 18:38:30.803"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.778" endtime="20230219 18:38:30.803"/>
-</iter>
-<iter>
-<var name="${index}">8</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.803" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.803" endtime="20230219 18:38:30.828"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.803" endtime="20230219 18:38:30.828"/>
-</iter>
-<iter>
-<var name="${index}">9</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.829" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.828" endtime="20230219 18:38:30.853"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.828" endtime="20230219 18:38:30.853"/>
-</iter>
-<iter>
-<var name="${index}">10</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.853" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.853" endtime="20230219 18:38:30.910"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.853" endtime="20230219 18:38:30.910"/>
-</iter>
-<iter>
-<var name="${index}">11</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.910" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.910" endtime="20230219 18:38:30.935"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.910" endtime="20230219 18:38:30.935"/>
-</iter>
-<iter>
-<var name="${index}">12</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.935" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.935" endtime="20230219 18:38:30.960"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.935" endtime="20230219 18:38:30.960"/>
-</iter>
-<iter>
-<var name="${index}">13</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:30.961" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:30.961" endtime="20230219 18:38:30.987"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:30.960" endtime="20230219 18:38:30.987"/>
-</iter>
-<status status="PASS" starttime="20230219 18:38:30.557" endtime="20230219 18:38:30.987"/>
-</for>
-<status status="PASS" starttime="20230219 18:38:30.556" endtime="20230219 18:38:30.988"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:35.999" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:30.988" endtime="20230219 18:38:35.999"/>
-</kw>
-<kw name="Press Our Key" library="Counterparty">
-<arg>\ue023</arg>
-<arg>10</arg>
-<arg>xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']</arg>
-<for flavor="IN RANGE">
-<var>${index}</var>
-<value>${Num}</value>
-<iter>
-<var name="${index}">0</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.000" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.000" endtime="20230219 18:38:36.027"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.000" endtime="20230219 18:38:36.027"/>
-</iter>
-<iter>
-<var name="${index}">1</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.027" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.027" endtime="20230219 18:38:36.053"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.027" endtime="20230219 18:38:36.053"/>
-</iter>
-<iter>
-<var name="${index}">2</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.054" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.054" endtime="20230219 18:38:36.078"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.054" endtime="20230219 18:38:36.079"/>
-</iter>
-<iter>
-<var name="${index}">3</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.079" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.079" endtime="20230219 18:38:36.106"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.079" endtime="20230219 18:38:36.106"/>
-</iter>
-<iter>
-<var name="${index}">4</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.106" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.106" endtime="20230219 18:38:36.131"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.106" endtime="20230219 18:38:36.131"/>
-</iter>
-<iter>
-<var name="${index}">5</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.131" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.131" endtime="20230219 18:38:36.157"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.131" endtime="20230219 18:38:36.157"/>
-</iter>
-<iter>
-<var name="${index}">6</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.157" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.157" endtime="20230219 18:38:36.182"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.157" endtime="20230219 18:38:36.182"/>
-</iter>
-<iter>
-<var name="${index}">7</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.183" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.183" endtime="20230219 18:38:36.209"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.182" endtime="20230219 18:38:36.209"/>
-</iter>
-<iter>
-<var name="${index}">8</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.210" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.210" endtime="20230219 18:38:36.235"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.209" endtime="20230219 18:38:36.235"/>
-</iter>
-<iter>
-<var name="${index}">9</var>
-<kw name="Press Key" library="SeleniumLibrary">
-<arg>${xpath}</arg>
-<arg>${Key}</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<msg timestamp="20230219 18:38:36.236" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<status status="PASS" starttime="20230219 18:38:36.235" endtime="20230219 18:38:36.262"/>
-</kw>
-<status status="PASS" starttime="20230219 18:38:36.235" endtime="20230219 18:38:36.262"/>
-</iter>
-<status status="PASS" starttime="20230219 18:38:36.000" endtime="20230219 18:38:36.262"/>
-</for>
-<status status="PASS" starttime="20230219 18:38:35.999" endtime="20230219 18:38:36.262"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230219 18:38:41.278" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230219 18:38:36.262" endtime="20230219 18:38:41.278"/>
-</kw>
-<kw name="Input MobilePhoneNewContact" library="Counterparty">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${MobilePhoneNewContact}</arg>
-<arg>${PhoneValue}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230219 18:38:41.279" level="INFO">Typing text '9999999999' into text field 'xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']'.</msg>
-<msg timestamp="20230219 18:38:41.523" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230219 18:38:41.523" level="FAIL">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=110.0.5481.104)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x006337D3]
-	(No symbol) [0x005C8B81]
-	(No symbol) [0x004CB230]
-	(No symbol) [0x004F8586]
-	(No symbol) [0x004F76A7]
-	(No symbol) [0x0051B41C]
-	(No symbol) [0x004F2B96]
-	(No symbol) [0x0051B774]
-	(No symbol) [0x00531215]
-	(No symbol) [0x0051B216]
-	(No symbol) [0x004F0D97]
-	(No symbol) [0x004F253D]
-	GetHandleVerifier [0x008AABF2+2510930]
-	GetHandleVerifier [0x008D8EC1+2700065]
-	GetHandleVerifier [0x008DC86C+2714828]
-	GetHandleVerifier [0x006E3480+645344]
-	(No symbol) [0x005D0FD2]
-	(No symbol) [0x005D6C68]
-	(No symbol) [0x005D6D4B]
-	(No symbol) [0x005E0D6B]
-	BaseThreadInitThunk [0x753800F9+25]
-	RtlGetAppContainerNamedObjectPath [0x770F7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x770F7B8E+238]
-</msg>
-<status status="FAIL" starttime="20230219 18:38:41.278" endtime="20230219 18:38:41.536"/>
-</kw>
-<status status="FAIL" starttime="20230219 18:38:41.278" endtime="20230219 18:38:41.537"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 18:38:41.537" endtime="20230219 18:38:41.537"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${WorkPhoneNewContact}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230219 18:38:41.537" endtime="20230219 18:38:41.537"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 18:38:41.537" endtime="20230219 18:38:41.537"/>
-</kw>
-<status status="FAIL" starttime="20230219 18:38:19.099" endtime="20230219 18:38:41.538"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.108" endtime="20230220 15:07:13.108"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 18:38:41.538" endtime="20230219 18:38:41.538"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.108" endtime="20230220 15:07:13.108"/>
+</kw>
+<kw name="When Filling Categorization" library="Counterparty">
+<status status="NOT RUN" starttime="20230220 15:07:13.108" endtime="20230220 15:07:13.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230220 15:07:13.109" endtime="20230220 15:07:13.109"/>
+</kw>
+<kw name="Filling AddNewContact" library="Counterparty">
+<status status="NOT RUN" starttime="20230220 15:07:13.109" endtime="20230220 15:07:13.109"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230220 15:07:13.109" endtime="20230220 15:07:13.109"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5000s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230219 18:38:41.538" endtime="20230219 18:38:41.538"/>
+<status status="NOT RUN" starttime="20230220 15:07:13.110" endtime="20230220 15:07:13.110"/>
 </kw>
 <tag>Smoke</tag>
-<status status="FAIL" starttime="20230219 18:37:46.847" endtime="20230219 18:38:41.539">ElementNotInteractableException: Message: element not interactable
-  (Session info: chrome=110.0.5481.104)
-Stacktrace:
-Backtrace:
-	(No symbol) [0x006337D3]
-	(No symbol) [0x005C8B81]
-	(No symbol) [0x004CB230]
-	(No symbol) [0x004F8586]
-	(No symbol) [0x004F76A7]
-	(No symbol) [0x0051B41C]
-	(No symbol) [0x004F2B96]
-	(No symbol) [0x0051B774]
-	(No symbol) [0x00531215]
-	(No symbol) [0x0051B216]
-	(No symbol) [0x004F0D97]
-	(No symbol) [0x004F253D]
-	GetHandleVerifier [0x008AABF2+2510930]
-	GetHandleVerifier [0x008D8EC1+2700065]
-	GetHandleVerifier [0x008DC86C+2714828]
-	GetHandleVerifier [0x006E3480+645344]
-	(No symbol) [0x005D0FD2]
-	(No symbol) [0x005D6C68]
-	(No symbol) [0x005D6D4B]
-	(No symbol) [0x005E0D6B]
-	BaseThreadInitThunk [0x753800F9+25]
-	RtlGetAppContainerNamedObjectPath [0x770F7BBE+286]
-	RtlGetAppContainerNamedObjectPath [0x770F7B8E+238]
-</status>
+<status status="FAIL" starttime="20230220 15:06:07.941" endtime="20230220 15:07:13.110">Element 'id:MainHeaderSchemaCaptionValueLabel' did not appear in 30 seconds.</status>
 </test>
 <doc>Login</doc>
-<status status="FAIL" starttime="20230219 18:37:46.566" endtime="20230219 18:38:41.541"/>
+<status status="FAIL" starttime="20230220 15:06:07.523" endtime="20230220 15:07:13.113"/>
 </suite>
-<status status="FAIL" starttime="20230219 18:37:46.564" endtime="20230219 18:38:41.544"/>
+<status status="FAIL" starttime="20230220 15:06:07.521" endtime="20230220 15:07:13.115"/>
 </suite>
-<status status="FAIL" starttime="20230219 18:37:46.562" endtime="20230219 18:38:41.546"/>
+<status status="FAIL" starttime="20230220 15:06:07.519" endtime="20230220 15:07:13.117"/>
 </suite>
-<status status="FAIL" starttime="20230219 18:37:46.559" endtime="20230219 18:38:41.549"/>
+<status status="FAIL" starttime="20230220 15:06:07.516" endtime="20230220 15:07:13.118"/>
 </suite>
-<status status="FAIL" starttime="20230219 18:37:46.530" endtime="20230219 18:38:41.552"/>
+<status status="FAIL" starttime="20230220 15:06:07.470" endtime="20230220 15:07:13.120"/>
 </suite>
 <statistics>
 <total>
@@ -646,37 +154,13 @@ Backtrace:
 <stat pass="0" fail="1" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Agrotek2">Agrotek2</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">Agrotek2.Test</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Resources">Agrotek2.Test.Resources</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="TestCase">Agrotek2.Test.Resources.TestCase</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Login">Agrotek2.Test.Resources.TestCase.Login</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Agrotek3">Agrotek3</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test">Agrotek3.Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Resources">Agrotek3.Test.Resources</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="TestCase">Agrotek3.Test.Resources.TestCase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Login">Agrotek3.Test.Resources.TestCase.Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230219 18:38:30.557" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.626" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.652" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.677" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.702" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.727" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.752" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.778" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.803" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.829" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.853" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.910" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.935" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:30.961" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.000" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.027" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.054" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.079" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.106" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.131" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.157" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.183" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.210" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230219 18:38:36.236" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>

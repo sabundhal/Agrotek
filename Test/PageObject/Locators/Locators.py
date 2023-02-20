@@ -32,10 +32,15 @@ SaveEditButton = "xpath=//*[@data-item-marker='SaveEditButton']"
 #PaymentDetails
 AddPaymentDetailsBtn = "xpath=//*[@id='AccountBillingInfoDetailV2AddRecordButtonButton-imageEl']"
 BIK = "xpath=//div[contains(@data-item-marker,'БИК')]/input"
-
-
 AccountNumber = "xpath=//div[contains(@data-item-marker,'Номер счета')]/input"
 SaveButton = "xpath=//*[@data-item-marker='SaveButton']"
+
+
+#Into СounterpartySection
+Email = "xpath=//*[@data-row='7']/div/div/div/input"
+Phone = "xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']"
+SaveBtn = "xpath=//*[@data-item-marker='SaveButton']"
+
 #CountryLookup
 AddAddressDetailsBtn = "xpath=//*[@id='AccountAddressDetailV2AddTypedRecordButtonButton-imageEl']"
 TypeAdress = "xpath=//*[@data-item-marker='Юридический']"
@@ -55,17 +60,16 @@ KPP = "xpath=//div[contains(@data-item-marker,'КПП')]/../div/input"
 OKPO = "xpath=//div[contains(@data-item-marker,'Код ОКПО')]/../div/input"
 
 #Categorization
-SelectOwnerLookup = "xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']"
+SelectOwnerLookup1 = "xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']/../input"
+#SelectOwnerLookup2 = "xpath=//div[starts-with(@id,'AccountPageV2LOOKUP62')]//div[@class='base-edit-right-icon-wrapper']"
 SelectFromListOwnerLookup = "xpath=//li[contains(@data-item-marker,'ОП Воронеж')]"
-OwnerLookup = "xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-right-icon-wrapper']"
+OwnerLookup1 = "xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-el']/../div[1]"
+OwnerLookup2 = "xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-right-icon-wrapper']"
 Responsible = "xpath=//div[@id='grid-grid-wrap']//descendant::div[8]/.."
 ResponsibleSaveBtn = "xpath=//*[@data-tag='SelectButton']"
 
 
-#Into СounterpartySection
-Email = "xpath=//*[@data-row='7']/div/div/div/input"
-Phone = "xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']"
-SaveBtn = "xpath=//*[@data-item-marker='SaveButton']"
+
 
 
 

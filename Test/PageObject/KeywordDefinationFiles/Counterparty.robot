@@ -51,17 +51,18 @@ Click TypeAdress
     Wait Until Page Contains Element  ${Country}  timeout=30
 
 Click OwnerLookup
-    Click  ${OwnerLookup}
+    Click   ${OwnerLookup1}
+    sleep    2s
+    Click   ${OwnerLookup2}
     Wait Until Page Contains Element  ${Responsible}  timeout=30
 
 Click ResponsibleSaveBtn
     Click  ${ResponsibleSaveBtn}
-    Wait Until Page Contains Element  ${MiniPageHeader}  timeout=30
+    #Wait Until Page Contains Element  ${MiniPageHeader}  timeout=30
 
 Click AddNewContactBtn
     Click  ${AddNewContactBtn}
     Wait Until Page Contains Element  ${ContactHeader}  timeout=30
-
 
 
 
@@ -148,124 +149,116 @@ Add New Counterparty
      Click Element    ${SaveEditButton}
 
 Go Into Counterparty
-    click element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
-    #sleep    7s
-    #Input Email
+    click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
+    sleep    7s
+    Input Email
     sleep    2s
-    #Click Element   ${Phone}
-    #sleep    2s
-    #Input Phone
-    #sleep    2s
-    #Click Element    ${SaveButton}
-    #sleep    2s
-    ##############LegalInformation
-    #Input PublicName
-    #sleep    2s
-    #Input ShortName
-    #sleep    2s
-    #Input OGRN
-    #sleep    2s
-    #Input KPP
-    #sleep    2s
-    #Input OKPO
-    #sleep    2s
-    #Click Element    ${SaveButton}
-    ############PaymentDetails
-    #Click AddPaymentDetailsBtn
-    #Input BIK
-    #sleep    5s
-    #click element   xpath=//li[contains(@data-item-marker,'${BIKValue}')][1]
-    #Input AccountNumber
-    #sleep    5s
-    #Click Element    ${SaveButton}
+    Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    2s
+    Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    2s
+    Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    7s
+    Click Element    ${SaveButton}
+    sleep    5s
 
-    ########################CountryLookup
-    #sleep    2s
-    #Click Element   ${AddAddressDetailsBtn}
-    #sleep    2s
-    #Click TypeAdress
-    #sleep    2s
-    #Input Country
-    #sleep    2s
-    #click element   xpath=//li[contains(@data-item-marker,'${CountryValue}')][1]
-    #sleep    2s
-    #Input Region
-    #sleep    2s
-#    click element   xpath=//li[contains(@data-item-marker,'${RegionValue}')][1]
-#    sleep    2s
-#    Input Area
-#    sleep    2s
-#    click element   xpath=//div[contains(@data-item-marker,'Район')]/ul/li[1]
-#    sleep    2s
-#    Input City
-#    sleep    2s
-#    click element   xpath=//div[contains(@data-item-marker,'Город')]/ul/li[1]
-#    sleep    2s
-#    Input AdressFromCity
-#    sleep    2s
-#    Input ZipCode
-#    sleep    2s
-#    Click Element    ${SaveButton}
-#    sleep    2s
-    ##########Categorization
-    #Click Element   ${SelectOwnerLookup}
-    #sleep    2s
-    #Click Element   ${SelectFromListOwnerLookup}
-    #sleep    2s
-    #Click OwnerLookup
-    #sleep    2s
-    #Click Element   ${Responsible}
-    #sleep    2s
-    #Click ResponsibleSaveBtn
-    ############AddNewContact
+Filling LegalInformation
+    Input PublicName
+    sleep    2s
+    Input ShortName
+    sleep    2s
+    Input OGRN
+    sleep    2s
+    Input KPP
+    sleep    2s
+    Input OKPO
+    sleep    2s
+    Click Element    ${SaveButton}
+Filling PaymentDetails
+    Click AddPaymentDetailsBtn
+    Input BIK
+    sleep    5s
+    click element   xpath=//li[contains(@data-item-marker,'${BIKValue}')][1]
+    Input AccountNumber
+    sleep    5s
+    Click Element    ${SaveButton}
+
+Filling CountryLookup
+    sleep    2s
+    Click Element   ${AddAddressDetailsBtn}
+    sleep    2s
+    Click TypeAdress
+    sleep    2s
+    Input Country
+    sleep    2s
+    click element   xpath=//li[contains(@data-item-marker,'${CountryValue}')][1]
+    sleep    2s
+    Input Region
+    sleep    2s
+    click element   xpath=//li[contains(@data-item-marker,'${RegionValue}')][1]
+    sleep    2s
+    Input Area
+    sleep    2s
+    click element   xpath=//div[contains(@data-item-marker,'Район')]/ul/li[1]
+    sleep    2s
+    Input City
+    sleep    2s
+    click element   xpath=//div[contains(@data-item-marker,'Город')]/ul/li[1]
+    sleep    2s
+    Input AdressFromCity
+    sleep    2s
+    Input ZipCode
+    sleep    2s
+    Click Element    ${SaveButton}
+    sleep    2s
+
+Filling Categorization
+    Click Element   ${SelectOwnerLookup1}
+    sleep    2s
+    #Click Element   ${SelectOwnerLookup2}
+    sleep    2s
+    Click Element   ${SelectFromListOwnerLookup}
+    sleep    2s
+    Click OwnerLookup
+    sleep    2s
+    Click Element   ${Responsible}
+    sleep    2s
+    Click ResponsibleSaveBtn
+
+Filling AddNewContact
     sleep    2s
     Click AddNewContactBtn
-#    sleep    2s
-#    Input NameNewContact
-#    sleep    2s
-#    Input EmailNewContact
-#    sleep    2s
-#    Click Element    ${WorkSpaceNewContact}
-#    sleep    2s
-#    Input JobTitleNewContact
-#    sleep    2s
-#    Click Element    ${SupervisorNewContact}
-#    sleep    2s
-#    Click Element    ${DepartmentNewContact}
-#    sleep    2s
-#    Click Element    ${AdministrationNewContact}
+    sleep    2s
+    Input NameNewContact
+    sleep    2s
+    Input EmailNewContact
+    sleep    2s
+    Click Element    ${WorkSpaceNewContact}
+    sleep    2s
+    Input JobTitleNewContact
+    sleep    2s
+    Click Element    ${SupervisorNewContact}
+    sleep    2s
+    Click Element    ${DepartmentNewContact}
+    sleep    2s
+    Click Element    ${AdministrationNewContact}
     sleep    2s
     Click Element    ${MobilePhoneNewContact}
-    sleep    5s
+    sleep    2s
     Press Our Key    \ue012    14    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
-    sleep    5s
+    sleep    2s
     Press Our Key    \ue023    10    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
-    sleep    5s
+    sleep    2s
     Input MobilePhoneNewContact
-    sleep    5s
+    sleep    2s
     Click Element    ${WorkPhoneNewContact}
-    sleep    10s
-#
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
+    Press Our Key    \ue012    14    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
+    sleep    2s
+    Press Our Key    \ue022    10    xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']
+    sleep    2s
 
 
-#    FOR   (let i = 0; i < 14; i++)
-#    {
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue012
-#    }
-#    END
-#
+
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue023
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue022
 #    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue021

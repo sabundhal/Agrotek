@@ -1,7 +1,7 @@
 # Login Page Test Data
 Username = "Supervisor"
 Password = "Su77Agr*"
-NameCounterparty = "j_Test_New5"
+NameCounterparty = "j_Test_New4"
 InnCounterparty = "220000300005"
 AccountNumberSet = "30101810400000000225"
 EmailValue = "test.avtotest.1@yandex.ru"
