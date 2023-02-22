@@ -66,6 +66,58 @@ Click AddNewContactBtn
     Wait Until Page Contains Element  ${ContactHeader}  timeout=30
     Wait Until Page Contains Element  ${NameNewContact}  timeout=30
 
+Select TypeCounterparty
+    Run Keyword And Ignore Error    Scroll Element Into View    xpath=//input[@id='AccountPageV2McsAccountInTypeComboBoxEdit-item-input']
+    sleep    2s
+    Click    ${SelectType}
+    Wait Until Page Contains Element  ${OurCompanyType}  timeout=30
+    sleep    2s
+    Click    ${OurCompanyType}
+    sleep    2s
+    Click    ${SelectType}
+    Wait Until Page Contains Element  ${ContractorCompanyType}  timeout=30
+    sleep    2s
+    Click    ${ContractorCompanyType}
+    sleep    2s
+    Click    ${SelectType}
+    sleep    2s
+    Wait Until Page Contains Element  ${ProviderCompanyType}  timeout=30
+    Click    ${ProviderCompanyType}
+
+
+Execute Task
+    Click    ${ExecuteTask}
+    Wait Until Page Contains Element  ${SelectResultTask}  timeout=30
+    Click    ${SelectResultTask}
+    Wait Until Page Contains Element  ${CooperationRecommended}  timeout=30
+    Click    ${CooperationRecommended}
+    sleep    2s
+    Click    ${SaveEditButton}
+
+Payment Details
+    Click    ${AddAddressDetailsBtn}
+    Wait Until Page Contains Element  ${SelectResultTask}  timeout=30
+    Click    ${NameAreaPlant}
+    sleep    2s
+    Press Our Key    \ue003    1    xpath=//div[contains(@data-item-marker,'Название')]/input
+    sleep    2s
+    Input Text  ${NameAreaPlant}  ${NameAreaPlantValue}
+    Click    ${CultureAreaPlant}
+    Input Text  ${SteamCultureAreaPlant}  ${SteamCultureAreaPlantValue}
+    Click    ${SelectCultureAreaPlant}
+    Wait Until Page Contains Element  ${SteamCultureAreaPlant}  timeout=30
+    Click    ${SteamCultureAreaPlant}
+    Click    ${ResponsibleSaveBtn}
+    Wait Until Page Contains Element  ${SelectResultTask}  timeout=30
+    Click    ${ResponsibleSaveBtn}
+    Input Text  ${SquareAreaPlant}  ${SquareAreaPlantValue}
+    Input Text  ${LocationAreaPlant}  ${LocationAreaPlantValue}
+    Click    ${OwnershipTypeAreaPlant}
+    Wait Until Page Contains Element  ${OwnedOwnershipTypeAreaPlant}  timeout=30
+    Click    ${OwnedOwnershipTypeAreaPlant}
+
+
+
 
 
 Input NameCounterparty
@@ -149,16 +201,18 @@ Add New Counterparty
 
 Go Into Counterparty
     click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
-    sleep    7s
-    #Input Email
     sleep    2s
-    #Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
+    Select TypeCounterparty
     sleep    2s
-    #Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    Input Email
     sleep    2s
-    #Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
-    sleep    7s
-    #Click Element    ${SaveButton}
+    Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    2s
+    Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    2s
+    Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    2s
+    Click Element    ${SaveButton}
     sleep    5s
 
 Filling LegalInformation
@@ -217,9 +271,10 @@ Filling Categorization
     #Click Element   ${SelectOwnerLookup2}
     sleep    2s
     Click Element   ${SelectFromListOwnerLookup}
-    sleep    2s
-    Scroll Element Into View   ${OwnerLookup1}
-    sleep    2s
+    sleep    5s
+    Run Keyword And Ignore Error    Scroll Element Into View    xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-el']/..
+    #Scroll Element Into View   ${OwnerLookup1}
+    sleep    5s
     Click OwnerLookup
     sleep    2s
     Click Element   ${Responsible}
@@ -259,11 +314,6 @@ Filling AddNewContact
     Click Element    ${SaveButton}
     sleep    5s
     Click Element    ${SaveButton}
-
-
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue023
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue022
-#    Press Key   xpath=//input[@id='ContactPageV2AccountMobilePhoneTextEdit-el']        \ue021
 
 
 

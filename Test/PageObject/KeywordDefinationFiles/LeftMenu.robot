@@ -38,3 +38,9 @@ Click IntegrationLogSection
 Click Сounterparty
     Click  ${Сounterparty}
     Wait Until Page Contains Element  ${AddСounterpartyBtn}  timeout=30
+
+
+
+Click Needs
+    Click  ${Needs}
+    Wait Until Page Contains Element  ${AddСounterpartyBtn}  timeout=30

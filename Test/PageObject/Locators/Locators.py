@@ -40,6 +40,39 @@ SaveButton = "xpath=//*[@data-item-marker='SaveButton']"
 Email = "xpath=//*[@data-row='7']/div/div/div/input"
 Phone = "xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']"
 SaveBtn = "xpath=//*[@data-item-marker='SaveButton']"
+SelectType = "xpath=//input[@id='AccountPageV2McsAccountInTypeComboBoxEdit-item-input']"
+OurCompanyType = "xpath=//li[@data-value='57412fad-53e6-df11-971b-001d60e938c6']"
+ContractorCompanyType = "xpath=//li[@data-value='f3c0ce97-53e6-df11-971b-001d60e938c6']"
+ProviderCompanyType = "xpath=//li[@data-value='d34b9da2-53e6-df11-971b-001d60e938c6']"
+
+#Execute Task
+ExecuteTask = "xpath=//span[@data-item-marker='Execute']"
+SelectResultTask = "xpath=//input[@idr='ResultComboBoxEdit-el']"
+CooperationRecommended = "xpath=//li[@data-value='d8eefd51-a15f-4add-8289-8f70ff4c494c']"
+
+#Payment Details
+AddAddressDetailsBtn = "xpath=//*[@id='McsAccountSignDetailAddRecordButtonButton-imageEl']"
+NameAreaPlant = "xpath=//div[contains(@data-item-marker,'Название')]/input"
+SpecialisationAreaPlant = "xpath=//div[contains(@data-item-marker,'Специализация')]/input"
+TechCultureSpecialisationAreaPlant = "xpath=//li[contains(@data-item-marker,'Выращивание технических культур')]"
+LocationAreaPlant = "xpath=//div[contains(@data-item-marker,'Расположение')]/input"
+OwnershipTypeAreaPlant = "xpath=//div[contains(@data-item-marker,'Тип собственности')]/input"
+OwnedOwnershipTypeAreaPlant = "xpath=//li[contains(@data-item-marker,'В собственности')]"
+CultureAreaPlant = "xpath=//div[contains(@data-item-marker,'Культура')]/input"
+SelectCultureAreaPlant = "xpath=//div[contains(@data-item-marker,'Культура')]/input/../div[4]"
+SteamCultureAreaPlant = "xpath=//div[contains(@data-item-marker,'Пары')]/div"
+#SearchCulture = "xpath=//input[contains(@id,'searchEdit-el')]"
+#SearchBtnCulture = "xpath=//span[contains(@data-tag,'SearchButton')]"
+#ResponsibleSaveBtn
+
+SquareAreaPlant = "xpath=//div[contains(@data-item-marker,'Площадь, га')]/input"
+
+
+
+
+#//div[@class='grid-layout-row ts-box-sizing '][1]/div[1]/div/div[2]/div/input
+
+
 
 #CountryLookup
 AddAddressDetailsBtn = "xpath=//*[@id='AccountAddressDetailV2AddTypedRecordButtonButton-imageEl']"
@@ -99,6 +132,34 @@ JobTitleNewContact = "xpath=//input[@id='ContactPageV2JobComboBoxEdit-el']"
 SupervisorNewContact = "xpath=//li[@data-item-marker='Руководитель']"
 DepartmentNewContact = "xpath=//input[@id='ContactPageV2DepartmentComboBoxEdit-el']"
 AdministrationNewContact = "xpath=//li[@data-item-marker='Администрация']"
+
+
+#Needs
+
+Needs = "id:sidebar-item-text-3"
+AddNeedsBtn = "xpath=//span[@data-item-marker='SeparateModeAddRecordButton']"
+TypeOfNeedsBtn = "xpath=//input[@id='LeadMiniPageLeadTypeComboBoxEdit-el']"
+RevealingTypeOfNeedsBtn = "xpath=//li[@data-item-marker='Выявление']"
+AdditionalServicesTypeOfNeedsBtn = "xpath=//li[@data-item-marker='Дополнительные услуги']"
+ComputerTechnologyTypeOfNeedsBtn = "xpath=//li[@data-item-marker='Компьютерная техника']"
+NeedForOurProductsTypeOfNeedsBtn = "xpath=//li[@data-item-marker='Потребность в наших продуктах']"
+NeedForOurServicesTypeOfNeedsBtn = "xpath=//li[@data-item-marker='Потребность в наших услугах']"
+SoftwareTypeOfNeedsBtn = "xpath=//li[@data-item-marker='Программное обеспечение']"
+SelectСounterparty = "xpath=//div[contains(@data-row,'3')]/div/div/div/input"
+SelectFirstPartOfNeeds = "xpath=//div[contains(@id,'grid-LeadSectionV2DataGridGrid-wrap')]/div[2]"
+#//div[contains(@id,'grid-LeadSectionV2DataGridGrid')]//*[text()='j_Test_New11'][1]
+OpenFirstPartOfNeeds = "xpath=//span[contains(@data-item-marker, 'Открыть')]"
+
+#Visit
+CreateVisitFromLeadButton = "xpath=//span[@data-item-marker='McsCreateVisitFromLeadButton']"
+#BtnComplete = "xpath=//div[contains(@id,'LeadSectionActionsDashboardDashboardContainerGrid')]"
+BtnComplete = "xpath=//span[contains(@data-item-marker,'Execute')]"
+
+
+
+
+
+
 
 
 
