@@ -16,6 +16,7 @@ TextMenu = "xpath=.//*[@id='top-menu-workplace-button-container']/span/span"
 CollapseBtnMenu = "id:collapse-button-imageEl"
 Sales = "css:[data-item-marker=\"Продажи\"]"
 Studio = "css:[data-item-marker=\"Студия\"]"
+Activity = "id:sidebar-item-text-6"
 
 #СounterpartySection
 AddСounterpartyBtn = "id:AccountSectionV2SeparateModeAddRecordButtonButton-textEl"
@@ -155,7 +156,16 @@ CreateVisitFromLeadButton = "xpath=//span[@data-item-marker='McsCreateVisitFromL
 #BtnComplete = "xpath=//div[contains(@id,'LeadSectionActionsDashboardDashboardContainerGrid')]"
 BtnComplete = "xpath=//span[contains(@data-item-marker,'Execute')]"
 
+#ACTIVITY
+#ActivityAddRecordBtn = "xpath=//span[@id='ActivitySectionV2SeparateModeAddRecordButtonButton-textEl']"
+#VisitInSelectActivity = "xpath=//*[contains(@data-item-marker,'SeparateModeAddRecordButton')]//*[text()='Визит'"
+SelectFirstPartOfVisit = "xpath=//div[contains(@id,'grid-ActivitySectionV2DataGridGrid-wrap')]/div[1]"
+OpenFirstPartOfVisit = "xpath=//*[contains(@data-item-marker,'Открыть')]"
 
+SelectTabProductOnVisit = "xpath=//*[contains(@id,'ActivityPageV2TabsTabPanel-tabpanel-items')]//*[text()='Продукты']"
+AddRecordBtnOnVisit = "xpath=//*[contains(@data-item-marker,'AddRecordButton')]"
+SelectProductOnWindow = "xpath=//*[contains(@data-item-marker,'Product')]"
+SelectProductOnWindow = "xpath=//*[text()='Продукты']"
 
 
 
@@ -167,17 +177,3 @@ BtnComplete = "xpath=//span[contains(@data-item-marker,'Execute')]"
 # Payment Schedule Section
 centerPanel = "id:centerPanel"
 
-# ${src}=    Get Element Attribute    xpath=.//*[@class="t-btn-wrapper t-btn-no-text-padding t-btn-style-transparent filter-remove-button"]    id
-# ${cun}=    get element count    xpath=.//*[@class="t-btn-wrapper t-btn-no-text-padding t-btn-style-transparent filter-remove-button"]
-#
-#    Get Element Attribute
-#    [Arguments]    ${element}    ${attr}
-#    ${list_of_attributes}    Get Attribute Names    ${element}
-#    ${value}=    Set Variable    None
-#    ${value}=    Run Keyword If    ${attr} in ${list_of_attributes}    Get Attribute    ${element}
-#   ${attr}
-#    [Return]    ${value}
-
-#    wait until keyword succeeds    10s    1s    click element  ${locatorAttribute}
-
-# base - edit - focus

@@ -6,16 +6,20 @@ Resource  ../../PageObject/KeywordDefinationFiles/LeftMenu.robot
 Resource  ../../PageObject/KeywordDefinationFiles/CommonSection.robot
 Resource  ../../PageObject/KeywordDefinationFiles/Counterparty.robot
 Resource  ../../PageObject/KeywordDefinationFiles/Needs.robot
-Resource  ../../PageObject/KeywordDefinationFiles/Visit.robot
 *** Variables ***
 
 *** Test Cases ***
-Create Sale
+Create Needs and Visit
     [Tags]  Smoke
     When Auto Login
     sleep    2s
     When Go Sales
     sleep    2s
+    When Add Needs
+    sleep    2s
+    When Add Visit
+    sleep    2s
+
 
 
 

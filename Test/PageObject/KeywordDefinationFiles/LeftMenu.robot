@@ -44,3 +44,8 @@ Click Сounterparty
 Click Needs
     Click  ${Needs}
     Wait Until Page Contains Element  ${AddСounterpartyBtn}  timeout=30
+
+
+Click Activity
+    Click  ${Activity}
+    Wait Until Page Contains Element  ${ActivityAddRecordBtn}  timeout=30
