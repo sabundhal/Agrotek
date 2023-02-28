@@ -56,6 +56,16 @@ Click CreateVisitFromLeadButton
     RELOAD PAGE
     Wait Until Page Contains Element  ${BtnComplete}  timeout=30
 
+Click SelectFirstPartOfActivity
+    Click  ${SelectFirstPartOfActivity}
+    Wait Until Page Contains Element  ${BtnComplete}  timeout=30
+    Click  ${OpenFirstPartOfVisit}
+
+Click SelectTabProductOnVisit
+    Click  ${SelectTabProductOnVisit}
+    Wait Until Page Contains Element  ${AddRecordBtnOnVisit}  timeout=30
+    Click  ${AddRecordBtnOnVisit}
+    Wait Until Page Contains Element  ${SelectProductOnWindow}  timeout=30
 
 
 
@@ -83,7 +93,18 @@ Add Visit
     sleep    5s
     Click CreateVisitFromLeadButton
 
-
+Go to Activity
+    sleep    5s
+    Click Activity
+    sleep    5s
+    Click SelectTabProductOnVisit
+    sleep    2s
+    click Element   xpath=//*[text()='${ProductValue1}']
+    sleep    2s
+    click Element   xpath=//*[text()='${ProductValue2}']
+    sleep    2s
+    click Element   xpath=//*[text()='${ProductValue3}']
+    sleep    2s
 
 
 

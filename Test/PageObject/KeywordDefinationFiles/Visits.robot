@@ -3,6 +3,7 @@ Library  SeleniumLibrary
 Library    Maticson.py
 Variables  ../TestData/Testdata.py
 Resource  ../../PageObject/KeywordDefinationFiles/LeftMenu.robot
+Resource  ../../PageObject/KeywordDefinationFiles/Counterparty.robot
 Variables    ../Locators/Locators.py
 
 *** Keywords ***
@@ -17,8 +18,8 @@ Click
 
 
 
-Click SelectFirstPartOfVisit
-    Click  ${SelectFirstPartOfVisit}
+Click SelectFirstPartOfActivity
+    Click  ${SelectFirstPartOfActivity}
     Wait Until Page Contains Element  ${OpenFirstPartOfVisit}  timeout=30
 
 Click OpenFirstPartOfVisit
@@ -29,15 +30,63 @@ Click SelectTabProductOnVisit
     Click  ${SelectTabProductOnVisit}
     Wait Until Page Contains Element  ${AddRecordBtnOnVisit}  timeout=30
 
+Input ProductValue1
+    Input Text  ${Search}  ${ProductValue1}
+    Click  ${SearchBtn}
+    sleep    5s
+    click Element   xpath=//div[contains(@data-item-marker,'${ProductValue1}')]
+
+Input ProductValue2
+    Input Text  ${Search}  ${ProductValue2}
+    Click  ${SearchBtn}
+    sleep    3s
+    click Element   xpath=//div[contains(@data-item-marker,'${ProductValue2}')]
+
+Input ProductValue3
+    Input Text  ${Search}  ${ProductValue3}
+    Click  ${SearchBtn}
+    sleep    3s
+    click element   xpath=//div[contains(@data-item-marker,'${ProductValue3}')]
+
+
+Input McsQuantityProductValue1
+
+    click element   xpath=//*[text()='${ProductValue1}']/../../div[2]/span
+    sleep    3s
+    Input Text  ${SetMcsQuantity}  ${McsQuantityValue}
+    sleep    3s
+    Click  ${SaveMcsQuantityBtn}
+
+Input McsQuantityProductValue2
+
+    click element   xpath=//*[text()='${ProductValue2}']/../../div[2]/span
+    sleep    3s
+    Input Text  ${SetMcsQuantity}  ${McsQuantityValue}
+    sleep    3s
+    Click  ${SaveMcsQuantityBtn}
+
+Input McsQuantityProductValue3
+
+    click element   xpath=//*[text()='${ProductValue3}']/../../div[2]/span
+    sleep    3s
+    Input Text  ${SetMcsQuantity}  ${McsQuantityValue}
+    sleep    3s
+    Click  ${SaveMcsQuantityBtn}
+
+
+
+
+
+
 Click AddRecordBtnOnVisit
     Click  ${AddRecordBtnOnVisit}
     Wait Until Page Contains Element  ${SelectProductOnWindow}  timeout=30
     sleep    2s
-    click element     = "xpath=//*[text()='${ProductValue1}']"
+    Input ProductValue1
     sleep    2s
-    click element     = "xpath=//*[text()='${ProductValue2}']"
+    Input ProductValue2
     sleep    2s
-    click element     = "xpath=//*[text()='${ProductValue3}']"
+    Input ProductValue3
     sleep    2s
     Click  ${ResponsibleSaveBtn}
 
@@ -45,13 +94,25 @@ Click SaveButton
     Wait Until Page Contains Element  ${SaveButton}  timeout=30
     Click  ${SaveButton}
 
-Create Sale
+Create SaleOnVisit
     Click Activity
-    Click SelectFirstPartOfVisit
+    sleep    5s
+    Click SelectFirstPartOfActivity
+    sleep    5s
     Click OpenFirstPartOfVisit
+    sleep    5s
     Click SelectTabProductOnVisit
+    sleep    5s
     Click AddRecordBtnOnVisit
-    Click SaveButton
+    sleep    5s
+    Input McsQuantityProductValue1
+    sleep    5s
+    Input McsQuantityProductValue2
+    sleep    5s
+    Input McsQuantityProductValue3
+
+    #Click SaveButton
+
 
 
 

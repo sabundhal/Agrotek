@@ -1,117 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.8.9 on darwin)" generated="20230222 17:38:51.463" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.8.9 on darwin)" generated="20230228 16:09:43.835" rpa="false" schemaversion="3">
 <suite id="s1" name="Agrotek3" source="/Users/uliaradnova/PycharmProjects/Agrotek3">
 <suite id="s1-s1" name="Test" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test">
 <suite id="s1-s1-s1" name="Resources" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources">
 <suite id="s1-s1-s1-s1" name="TestCase" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources/TestCase">
-<suite id="s1-s1-s1-s1-s1" name="Needs" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources/TestCase/Needs.robot">
-<test id="s1-s1-s1-s1-s1-t1" name="Create Needs and Visit" line="12">
+<suite id="s1-s1-s1-s1-s1" name="Visit" source="/Users/uliaradnova/PycharmProjects/Agrotek3/Test/Resources/TestCase/Visit.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Create ActivitySales" line="13">
 <kw name="When Auto Login" library="LoginPage">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230222 17:38:51.809" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
-<status status="PASS" starttime="20230222 17:38:51.808" endtime="20230222 17:38:54.246"/>
+<msg timestamp="20230228 16:09:44.050" level="INFO">Opening browser 'Chrome' to base url 'https://preprod-crm.agrotek.com/Login'.</msg>
+<status status="PASS" starttime="20230228 16:09:44.049" endtime="20230228 16:09:47.041"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:38:54.246" endtime="20230222 17:39:01.075"/>
+<status status="PASS" starttime="20230228 16:09:47.042" endtime="20230228 16:09:50.530"/>
 </kw>
 <kw name="Input Username" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginUsernameInputBox}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:01.076" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
-<status status="PASS" starttime="20230222 17:39:01.075" endtime="20230222 17:39:01.231"/>
+<msg timestamp="20230228 16:09:50.531" level="INFO">Typing text 'Supervisor' into text field 'id:loginEdit-el'.</msg>
+<status status="PASS" starttime="20230228 16:09:50.531" endtime="20230228 16:09:50.738"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:01.075" endtime="20230222 17:39:01.231"/>
+<status status="PASS" starttime="20230228 16:09:50.530" endtime="20230228 16:09:50.738"/>
 </kw>
 <kw name="Input Password" library="LoginPage">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${LoginPasswordInputBox}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:01.232" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
-<status status="PASS" starttime="20230222 17:39:01.232" endtime="20230222 17:39:01.305"/>
+<msg timestamp="20230228 16:09:50.740" level="INFO">Typing text 'Su77Agr*' into text field 'id:passwordEdit-el'.</msg>
+<status status="PASS" starttime="20230228 16:09:50.739" endtime="20230228 16:09:50.827"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:01.231" endtime="20230222 17:39:01.305"/>
+<status status="PASS" starttime="20230228 16:09:50.739" endtime="20230228 16:09:50.827"/>
 </kw>
 <kw name="Click Login" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${LoginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:01.307" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
-<status status="PASS" starttime="20230222 17:39:01.306" endtime="20230222 17:39:01.372"/>
+<msg timestamp="20230228 16:09:50.828" level="INFO">Clicking element 'id:t-comp16-textEl'.</msg>
+<status status="PASS" starttime="20230228 16:09:50.828" endtime="20230228 16:09:50.900"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:01.306" endtime="20230222 17:39:01.372"/>
+<status status="PASS" starttime="20230228 16:09:50.828" endtime="20230228 16:09:50.900"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${MainHeaderLabel}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:01.372" endtime="20230222 17:39:13.628"/>
+<status status="PASS" starttime="20230228 16:09:50.901" endtime="20230228 16:09:59.746"/>
 </kw>
 <kw name="Click CollapseBtnMenu" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${CollapseBtnMenu}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:13.629" level="INFO">Clicking element 'id:collapse-button-imageEl'.</msg>
-<status status="PASS" starttime="20230222 17:39:13.629" endtime="20230222 17:39:14.425"/>
+<msg timestamp="20230228 16:09:59.748" level="INFO">Clicking element 'id:collapse-button-imageEl'.</msg>
+<status status="PASS" starttime="20230228 16:09:59.747" endtime="20230228 16:09:59.883"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:13.628" endtime="20230222 17:39:14.425"/>
+<status status="PASS" starttime="20230228 16:09:59.746" endtime="20230228 16:09:59.883"/>
 </kw>
-<status status="PASS" starttime="20230222 17:38:51.808" endtime="20230222 17:39:14.425"/>
+<status status="PASS" starttime="20230228 16:09:44.049" endtime="20230228 16:09:59.884"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:16.427" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:14.425" endtime="20230222 17:39:16.427"/>
+<msg timestamp="20230228 16:10:01.886" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230228 16:09:59.884" endtime="20230228 16:10:01.887"/>
 </kw>
 <kw name="When Go Sales" library="LeftMenu">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${Label}</var>
 <arg>${TextMenu}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:16.476" level="INFO">${Label} = Продажи</msg>
-<status status="PASS" starttime="20230222 17:39:16.428" endtime="20230222 17:39:16.476"/>
+<msg timestamp="20230228 16:10:02.013" level="INFO">${Label} = Продажи</msg>
+<status status="PASS" starttime="20230228 16:10:01.888" endtime="20230228 16:10:02.013"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;Студия&quot; == &quot;${Label}&quot;">
 <kw name="Click" library="LeftMenu">
 <arg>${TopMenu}</arg>
-<status status="NOT RUN" starttime="20230222 17:39:16.477" endtime="20230222 17:39:16.477"/>
+<status status="NOT RUN" starttime="20230228 16:10:02.014" endtime="20230228 16:10:02.014"/>
 </kw>
 <kw name="Click" library="LeftMenu">
 <arg>${Sales}</arg>
-<status status="NOT RUN" starttime="20230222 17:39:16.477" endtime="20230222 17:39:16.477"/>
+<status status="NOT RUN" starttime="20230228 16:10:02.014" endtime="20230228 16:10:02.014"/>
 </kw>
-<status status="NOT RUN" starttime="20230222 17:39:16.476" endtime="20230222 17:39:16.477"/>
+<status status="NOT RUN" starttime="20230228 16:10:02.014" endtime="20230228 16:10:02.015"/>
 </branch>
-<status status="PASS" starttime="20230222 17:39:16.476" endtime="20230222 17:39:16.477"/>
+<status status="PASS" starttime="20230228 16:10:02.014" endtime="20230228 16:10:02.015"/>
 </if>
-<status status="PASS" starttime="20230222 17:39:16.428" endtime="20230222 17:39:16.477"/>
+<status status="PASS" starttime="20230228 16:10:01.887" endtime="20230228 16:10:02.015"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:18.479" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:16.478" endtime="20230222 17:39:18.479"/>
+<msg timestamp="20230228 16:10:04.017" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:02.015" endtime="20230228 16:10:04.018"/>
 </kw>
-<kw name="When Add Needs" library="Needs">
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:23.482" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:18.481" endtime="20230222 17:39:23.483"/>
-</kw>
-<kw name="Click Needs" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${Needs}</arg>
+<kw name="When Create SaleOnVisit" library="Visits">
+<kw name="Click Activity" library="LeftMenu">
+<kw name="Click" library="LeftMenu">
+<arg>${Activity}</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${check_element}</var>
 <arg>Wait Until Page Contains Element</arg>
@@ -122,10 +116,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:23.486" endtime="20230222 17:39:23.503"/>
+<status status="PASS" starttime="20230228 16:10:04.022" endtime="20230228 16:10:04.039"/>
 </kw>
-<msg timestamp="20230222 17:39:23.503" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:39:23.485" endtime="20230222 17:39:23.503"/>
+<msg timestamp="20230228 16:10:04.039" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:04.021" endtime="20230228 16:10:04.039"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -135,30 +129,30 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:23.504" level="INFO">Clicking element 'id:sidebar-item-text-3'.</msg>
-<status status="PASS" starttime="20230222 17:39:23.503" endtime="20230222 17:39:23.547"/>
+<msg timestamp="20230228 16:10:04.041" level="INFO">Clicking element 'id:sidebar-item-text-6'.</msg>
+<status status="PASS" starttime="20230228 16:10:04.040" endtime="20230228 16:10:04.094"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:23.503" endtime="20230222 17:39:23.547"/>
+<status status="PASS" starttime="20230228 16:10:04.039" endtime="20230228 16:10:04.094"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:23.484" endtime="20230222 17:39:23.547"/>
+<status status="PASS" starttime="20230228 16:10:04.020" endtime="20230228 16:10:04.095"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${AddNeedsBtn}</arg>
+<arg>${ActivityAddRecordBtn}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:23.548" endtime="20230222 17:39:26.752"/>
+<status status="PASS" starttime="20230228 16:10:04.095" endtime="20230228 16:10:06.067"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:23.483" endtime="20230222 17:39:26.752"/>
+<status status="PASS" starttime="20230228 16:10:04.019" endtime="20230228 16:10:06.067"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:31.753" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:26.752" endtime="20230222 17:39:31.754"/>
+<msg timestamp="20230228 16:10:11.068" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:06.067" endtime="20230228 16:10:11.068"/>
 </kw>
-<kw name="Click AddNeedsBtn" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${AddNeedsBtn}</arg>
+<kw name="Click SelectFirstPartOfActivity" library="Visits">
+<kw name="Click" library="Visits">
+<arg>${SelectFirstPartOfActivity}</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${check_element}</var>
 <arg>Wait Until Page Contains Element</arg>
@@ -169,10 +163,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:31.757" endtime="20230222 17:39:31.771"/>
+<status status="PASS" starttime="20230228 16:10:11.069" endtime="20230228 16:10:11.083"/>
 </kw>
-<msg timestamp="20230222 17:39:31.771" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:39:31.756" endtime="20230222 17:39:31.771"/>
+<msg timestamp="20230228 16:10:11.083" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:11.069" endtime="20230228 16:10:11.083"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -182,30 +176,30 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:31.772" level="INFO">Clicking element 'xpath=//span[@data-item-marker='SeparateModeAddRecordButton']'.</msg>
-<status status="PASS" starttime="20230222 17:39:31.772" endtime="20230222 17:39:31.839"/>
+<msg timestamp="20230228 16:10:11.084" level="INFO">Clicking element 'xpath=//div[contains(@id,'grid-ActivitySectionV2DataGridGrid-wrap')]/div[1]'.</msg>
+<status status="PASS" starttime="20230228 16:10:11.084" endtime="20230228 16:10:11.151"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:31.771" endtime="20230222 17:39:31.839"/>
+<status status="PASS" starttime="20230228 16:10:11.083" endtime="20230228 16:10:11.151"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:31.755" endtime="20230222 17:39:31.839"/>
+<status status="PASS" starttime="20230228 16:10:11.069" endtime="20230228 16:10:11.151"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${TypeOfNeedsBtn}</arg>
+<arg>${OpenFirstPartOfVisit}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:31.839" endtime="20230222 17:39:32.778"/>
+<status status="PASS" starttime="20230228 16:10:11.151" endtime="20230228 16:10:11.170"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:31.754" endtime="20230222 17:39:32.778"/>
+<status status="PASS" starttime="20230228 16:10:11.068" endtime="20230228 16:10:11.170"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:37.779" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:32.779" endtime="20230222 17:39:37.780"/>
+<msg timestamp="20230228 16:10:16.172" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:11.170" endtime="20230228 16:10:16.173"/>
 </kw>
-<kw name="Click TypeOfNeedsBtn" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${TypeOfNeedsBtn}</arg>
+<kw name="Click OpenFirstPartOfVisit" library="Visits">
+<kw name="Click" library="Visits">
+<arg>${OpenFirstPartOfVisit}</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${check_element}</var>
 <arg>Wait Until Page Contains Element</arg>
@@ -216,10 +210,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:37.782" endtime="20230222 17:39:37.797"/>
+<status status="PASS" starttime="20230228 16:10:16.175" endtime="20230228 16:10:16.189"/>
 </kw>
-<msg timestamp="20230222 17:39:37.797" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:39:37.782" endtime="20230222 17:39:37.797"/>
+<msg timestamp="20230228 16:10:16.189" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:16.174" endtime="20230228 16:10:16.189"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -229,30 +223,30 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:37.799" level="INFO">Clicking element 'xpath=//input[@id='LeadMiniPageLeadTypeComboBoxEdit-el']'.</msg>
-<status status="PASS" starttime="20230222 17:39:37.798" endtime="20230222 17:39:37.847"/>
+<msg timestamp="20230228 16:10:16.190" level="INFO">Clicking element 'xpath=//*[contains(@data-item-marker,'Открыть')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:16.190" endtime="20230228 16:10:16.290"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:37.797" endtime="20230222 17:39:37.847"/>
+<status status="PASS" starttime="20230228 16:10:16.189" endtime="20230228 16:10:16.290"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:37.781" endtime="20230222 17:39:37.847"/>
+<status status="PASS" starttime="20230228 16:10:16.173" endtime="20230228 16:10:16.290"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${RevealingTypeOfNeedsBtn}</arg>
+<arg>${SelectTabProductOnVisit}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:37.847" endtime="20230222 17:39:38.075"/>
+<status status="PASS" starttime="20230228 16:10:16.291" endtime="20230228 16:10:16.986"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:37.780" endtime="20230222 17:39:38.075"/>
+<status status="PASS" starttime="20230228 16:10:16.173" endtime="20230228 16:10:16.987"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:43.077" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:38.075" endtime="20230222 17:39:43.077"/>
+<msg timestamp="20230228 16:10:21.988" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:16.987" endtime="20230228 16:10:21.989"/>
 </kw>
-<kw name="Click RevealingTypeOfNeedsBtn" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${RevealingTypeOfNeedsBtn}</arg>
+<kw name="Click SelectTabProductOnVisit" library="Visits">
+<kw name="Click" library="Visits">
+<arg>${SelectTabProductOnVisit}</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${check_element}</var>
 <arg>Wait Until Page Contains Element</arg>
@@ -263,10 +257,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:43.080" endtime="20230222 17:39:43.094"/>
+<status status="PASS" starttime="20230228 16:10:21.992" endtime="20230228 16:10:22.007"/>
 </kw>
-<msg timestamp="20230222 17:39:43.094" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:39:43.080" endtime="20230222 17:39:43.094"/>
+<msg timestamp="20230228 16:10:22.007" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:21.991" endtime="20230228 16:10:22.007"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -276,30 +270,30 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:43.096" level="INFO">Clicking element 'xpath=//li[@data-item-marker='Выявление']'.</msg>
-<status status="PASS" starttime="20230222 17:39:43.095" endtime="20230222 17:39:43.135"/>
+<msg timestamp="20230228 16:10:22.009" level="INFO">Clicking element 'xpath=//*[contains(@id,'ActivityPageV2TabsTabPanel-tabpanel-items')]//*[text()='Продукты']'.</msg>
+<status status="PASS" starttime="20230228 16:10:22.008" endtime="20230228 16:10:22.063"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:43.094" endtime="20230222 17:39:43.135"/>
+<status status="PASS" starttime="20230228 16:10:22.008" endtime="20230228 16:10:22.063"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:43.078" endtime="20230222 17:39:43.135"/>
+<status status="PASS" starttime="20230228 16:10:21.990" endtime="20230228 16:10:22.063"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${SelectСounterparty}</arg>
+<arg>${AddRecordBtnOnVisit}</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:43.135" endtime="20230222 17:39:43.148"/>
+<status status="PASS" starttime="20230228 16:10:22.064" endtime="20230228 16:10:22.788"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:43.078" endtime="20230222 17:39:43.148"/>
+<status status="PASS" starttime="20230228 16:10:21.989" endtime="20230228 16:10:22.788"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:48.150" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:43.148" endtime="20230222 17:39:48.151"/>
+<msg timestamp="20230228 16:10:27.790" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:22.788" endtime="20230228 16:10:27.790"/>
 </kw>
-<kw name="Input NameOfCounterparty" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${SelectСounterparty}</arg>
+<kw name="Click AddRecordBtnOnVisit" library="Visits">
+<kw name="Click" library="Visits">
+<arg>${AddRecordBtnOnVisit}</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${check_element}</var>
 <arg>Wait Until Page Contains Element</arg>
@@ -310,10 +304,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:39:48.152" endtime="20230222 17:39:48.160"/>
+<status status="PASS" starttime="20230228 16:10:27.793" endtime="20230228 16:10:27.806"/>
 </kw>
-<msg timestamp="20230222 17:39:48.160" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:39:48.152" endtime="20230222 17:39:48.160"/>
+<msg timestamp="20230228 16:10:27.806" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:27.792" endtime="20230228 16:10:27.806"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -323,49 +317,95 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:48.162" level="INFO">Clicking element 'xpath=//div[contains(@data-row,'3')]/div/div/div/input'.</msg>
-<status status="PASS" starttime="20230222 17:39:48.161" endtime="20230222 17:39:48.206"/>
+<msg timestamp="20230228 16:10:27.808" level="INFO">Clicking element 'xpath=//*[contains(@data-item-marker,'Продукты')]/div/div/span[1]/span'.</msg>
+<status status="PASS" starttime="20230228 16:10:27.807" endtime="20230228 16:10:27.856"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:48.161" endtime="20230222 17:39:48.206"/>
+<status status="PASS" starttime="20230228 16:10:27.807" endtime="20230228 16:10:27.856"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:48.151" endtime="20230222 17:39:48.206"/>
+<status status="PASS" starttime="20230228 16:10:27.791" endtime="20230228 16:10:27.856"/>
 </kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${SelectProductOnWindow}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230228 16:10:27.857" endtime="20230228 16:10:27.887"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230228 16:10:29.888" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:27.887" endtime="20230228 16:10:29.888"/>
+</kw>
+<kw name="Input ProductValue1" library="Visits">
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>${SelectСounterparty}</arg>
-<arg>${NameCounterparty}</arg>
+<arg>${Search}</arg>
+<arg>${ProductValue1}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:48.207" level="INFO">Typing text 'j_Test_New12' into text field 'xpath=//div[contains(@data-row,'3')]/div/div/div/input'.</msg>
-<status status="PASS" starttime="20230222 17:39:48.206" endtime="20230222 17:39:48.272"/>
+<msg timestamp="20230228 16:10:29.891" level="INFO">Typing text 'Флоракс, КС (550+7,4 г/л) 5л' into text field 'xpath=//input[contains(@id,'searchEdit-el')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:29.889" endtime="20230228 16:10:30.000"/>
+</kw>
+<kw name="Click" library="Visits">
+<arg>${SearchBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230228 16:10:30.002" endtime="20230228 16:10:30.016"/>
+</kw>
+<msg timestamp="20230228 16:10:30.016" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:30.001" endtime="20230228 16:10:30.016"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:30.018" level="INFO">Clicking element 'xpath=//span[contains(@data-tag,'SearchButton')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:30.017" endtime="20230228 16:10:30.109"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:30.017" endtime="20230228 16:10:30.110"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:30.001" endtime="20230228 16:10:30.110"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:53.274" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:48.272" endtime="20230222 17:39:53.274"/>
+<msg timestamp="20230228 16:10:35.112" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:30.111" endtime="20230228 16:10:35.112"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//li[@data-item-marker='${NameCounterparty}']</arg>
+<arg>xpath=//div[contains(@data-item-marker,'${ProductValue1}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:39:53.277" level="INFO">Clicking element 'xpath=//li[@data-item-marker='j_Test_New12']'.</msg>
-<status status="PASS" starttime="20230222 17:39:53.275" endtime="20230222 17:39:53.328"/>
+<msg timestamp="20230228 16:10:35.114" level="INFO">Clicking element 'xpath=//div[contains(@data-item-marker,'Флоракс, КС (550+7,4 г/л) 5л')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:35.112" endtime="20230228 16:10:35.164"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:29.889" endtime="20230228 16:10:35.164"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:39:55.330" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:53.328" endtime="20230222 17:39:55.330"/>
+<msg timestamp="20230228 16:10:37.167" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:35.165" endtime="20230228 16:10:37.167"/>
 </kw>
-<status status="PASS" starttime="20230222 17:39:48.151" endtime="20230222 17:39:55.331"/>
+<kw name="Input ProductValue2" library="Visits">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Search}</arg>
+<arg>${ProductValue2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:37.169" level="INFO">Typing text 'Результат Супер ВР (150 г/л), 10л' into text field 'xpath=//input[contains(@id,'searchEdit-el')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:37.168" endtime="20230228 16:10:37.391"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:00.333" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:39:55.331" endtime="20230222 17:40:00.334"/>
-</kw>
-<kw name="Click SaveEditButton" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${SaveEditButton}</arg>
+<kw name="Click" library="Visits">
+<arg>${SearchBtn}</arg>
 <kw name="Run Keyword And Return Status" library="BuiltIn">
 <var>${check_element}</var>
 <arg>Wait Until Page Contains Element</arg>
@@ -376,66 +416,10 @@
 <arg>${Element}</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:00.337" endtime="20230222 17:40:00.356"/>
+<status status="PASS" starttime="20230228 16:10:37.392" endtime="20230228 16:10:37.403"/>
 </kw>
-<msg timestamp="20230222 17:40:00.356" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:40:00.336" endtime="20230222 17:40:00.356"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${check_element}' == 'True'</arg>
-<arg>Click Element</arg>
-<arg>${Element}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:40:00.357" level="INFO">Clicking element 'xpath=//*[@data-item-marker='SaveEditButton']'.</msg>
-<status status="PASS" starttime="20230222 17:40:00.356" endtime="20230222 17:40:00.434"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:00.356" endtime="20230222 17:40:00.434"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:00.335" endtime="20230222 17:40:00.434"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${SelectFirstPartOfNeeds}</arg>
-<arg>timeout=30</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:00.434" endtime="20230222 17:40:00.445"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:00.334" endtime="20230222 17:40:00.445"/>
-</kw>
-<status status="PASS" starttime="20230222 17:39:18.480" endtime="20230222 17:40:00.445"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:02.446" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:00.445" endtime="20230222 17:40:02.446"/>
-</kw>
-<kw name="When Add Visit" library="Needs">
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:07.449" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:02.448" endtime="20230222 17:40:07.449"/>
-</kw>
-<kw name="Click SelectFirstPartOfNeeds" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${SelectFirstPartOfNeeds}</arg>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${check_element}</var>
-<arg>Wait Until Page Contains Element</arg>
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:07.450" endtime="20230222 17:40:07.457"/>
-</kw>
-<msg timestamp="20230222 17:40:07.457" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:40:07.450" endtime="20230222 17:40:07.457"/>
+<msg timestamp="20230228 16:10:37.403" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:37.392" endtime="20230228 16:10:37.403"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${check_element}' == 'True'</arg>
@@ -445,314 +429,213 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Element}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:40:07.458" level="INFO">Clicking element 'xpath=//div[contains(@id,'grid-LeadSectionV2DataGridGrid-wrap')]/div[2]'.</msg>
-<status status="PASS" starttime="20230222 17:40:07.458" endtime="20230222 17:40:07.499"/>
+<msg timestamp="20230228 16:10:37.406" level="INFO">Clicking element 'xpath=//span[contains(@data-tag,'SearchButton')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:37.405" endtime="20230228 16:10:37.449"/>
 </kw>
-<status status="PASS" starttime="20230222 17:40:07.457" endtime="20230222 17:40:07.499"/>
+<status status="PASS" starttime="20230228 16:10:37.404" endtime="20230228 16:10:37.449"/>
 </kw>
-<status status="PASS" starttime="20230222 17:40:07.449" endtime="20230222 17:40:07.499"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${OpenFirstPartOfNeeds}</arg>
-<arg>timeout=30</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:07.499" endtime="20230222 17:40:07.509"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:07.449" endtime="20230222 17:40:07.509"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:12.512" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:07.509" endtime="20230222 17:40:12.512"/>
-</kw>
-<kw name="Click OpenFirstPartOfNeeds" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${OpenFirstPartOfNeeds}</arg>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${check_element}</var>
-<arg>Wait Until Page Contains Element</arg>
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:12.515" endtime="20230222 17:40:12.529"/>
-</kw>
-<msg timestamp="20230222 17:40:12.529" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:40:12.515" endtime="20230222 17:40:12.529"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${check_element}' == 'True'</arg>
-<arg>Click Element</arg>
-<arg>${Element}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:40:12.531" level="INFO">Clicking element 'xpath=//span[contains(@data-item-marker, 'Открыть')]'.</msg>
-<status status="PASS" starttime="20230222 17:40:12.530" endtime="20230222 17:40:12.702"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:12.529" endtime="20230222 17:40:12.702"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:12.514" endtime="20230222 17:40:12.703"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${CreateVisitFromLeadButton}</arg>
-<arg>timeout=30</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:12.703" endtime="20230222 17:40:13.589"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:12.513" endtime="20230222 17:40:13.590"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:18.592" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:13.590" endtime="20230222 17:40:18.593"/>
-</kw>
-<kw name="Click CreateVisitFromLeadButton" library="Needs">
-<kw name="Click" library="Needs">
-<arg>${CreateVisitFromLeadButton}</arg>
-<kw name="Run Keyword And Return Status" library="BuiltIn">
-<var>${check_element}</var>
-<arg>Wait Until Page Contains Element</arg>
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<arg>10s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:18.596" endtime="20230222 17:40:18.609"/>
-</kw>
-<msg timestamp="20230222 17:40:18.610" level="INFO">${check_element} = True</msg>
-<status status="PASS" starttime="20230222 17:40:18.595" endtime="20230222 17:40:18.610"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${check_element}' == 'True'</arg>
-<arg>Click Element</arg>
-<arg>${Element}</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${Element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:40:18.611" level="INFO">Clicking element 'xpath=//span[@data-item-marker='McsCreateVisitFromLeadButton']'.</msg>
-<status status="PASS" starttime="20230222 17:40:18.610" endtime="20230222 17:40:18.676"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:18.610" endtime="20230222 17:40:18.676"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:18.594" endtime="20230222 17:40:18.676"/>
+<status status="PASS" starttime="20230228 16:10:37.392" endtime="20230228 16:10:37.449"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:21.677" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:18.676" endtime="20230222 17:40:21.678"/>
+<msg timestamp="20230228 16:10:40.450" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:37.449" endtime="20230228 16:10:40.450"/>
 </kw>
-<kw name="Reload Page" library="SeleniumLibrary">
-<doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20230222 17:40:21.678" endtime="20230222 17:40:21.881"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[contains(@data-item-marker,'${ProductValue2}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:40.452" level="INFO">Clicking element 'xpath=//div[contains(@data-item-marker,'Результат Супер ВР (150 г/л), 10л')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:40.451" endtime="20230228 16:10:40.499"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${BtnComplete}</arg>
-<arg>timeout=30</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20230222 17:40:21.882" endtime="20230222 17:40:29.338"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:18.593" endtime="20230222 17:40:29.338"/>
-</kw>
-<status status="PASS" starttime="20230222 17:40:02.447" endtime="20230222 17:40:29.338"/>
+<status status="PASS" starttime="20230228 16:10:37.167" endtime="20230228 16:10:40.499"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:40:31.339" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:29.339" endtime="20230222 17:40:31.340"/>
+<msg timestamp="20230228 16:10:42.501" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:40.500" endtime="20230228 16:10:42.501"/>
+</kw>
+<kw name="Input ProductValue3" library="Visits">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Search}</arg>
+<arg>${ProductValue3}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:42.504" level="INFO">Typing text 'Солигор, КЭ (53 г/л+148 г/л+224 г/л) 5л' into text field 'xpath=//input[contains(@id,'searchEdit-el')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:42.502" endtime="20230228 16:10:42.683"/>
+</kw>
+<kw name="Click" library="Visits">
+<arg>${SearchBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230228 16:10:42.684" endtime="20230228 16:10:42.693"/>
+</kw>
+<msg timestamp="20230228 16:10:42.694" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:42.684" endtime="20230228 16:10:42.694"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:42.696" level="INFO">Clicking element 'xpath=//span[contains(@data-tag,'SearchButton')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:42.695" endtime="20230228 16:10:42.753"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:42.694" endtime="20230228 16:10:42.753"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:42.684" endtime="20230228 16:10:42.753"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5000s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 19:08:45.394" level="INFO">Slept 1 hour 23 minutes 20 seconds</msg>
-<status status="PASS" starttime="20230222 17:40:31.340" endtime="20230222 19:08:45.399"/>
-</kw>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20230222 17:38:51.807" endtime="20230222 19:08:45.410"/>
-</test>
-<doc>Login</doc>
-<status status="PASS" starttime="20230222 17:38:51.510" endtime="20230222 19:08:45.414"/>
-</suite>
-<status status="PASS" starttime="20230222 17:38:51.509" endtime="20230222 19:08:45.417"/>
-</suite>
-<status status="PASS" starttime="20230222 17:38:51.507" endtime="20230222 19:08:45.418"/>
-</suite>
-<status status="PASS" starttime="20230222 17:38:51.505" endtime="20230222 19:08:45.419"/>
-</suite>
-<status status="PASS" starttime="20230222 17:38:51.471" endtime="20230222 19:08:45.420"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Agrotek3">Agrotek3</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Agrotek3.Test</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Resources">Agrotek3.Test.Resources</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TestCase">Agrotek3.Test.Resources.TestCase</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Needs">Agrotek3.Test.Resources.TestCase.Needs</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:34:31.458" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:34:29.457" endtime="20230222 17:34:31.459"/>
+<msg timestamp="20230228 16:10:45.755" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:42.753" endtime="20230228 16:10:45.755"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${SaveButton}</arg>
+<arg>xpath=//div[contains(@data-item-marker,'${ProductValue3}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:34:31.462" level="INFO">Clicking element 'xpath=//*[@data-item-marker='SaveButton']'.</msg>
-<status status="PASS" starttime="20230222 17:34:31.460" endtime="20230222 17:34:31.591"/>
+<msg timestamp="20230228 16:10:45.757" level="INFO">Clicking element 'xpath=//div[contains(@data-item-marker,'Солигор, КЭ (53 г/л+148 г/л+224 г/л) 5л')]'.</msg>
+<status status="PASS" starttime="20230228 16:10:45.755" endtime="20230228 16:10:45.809"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:42.501" endtime="20230228 16:10:45.809"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230228 16:10:47.811" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:45.809" endtime="20230228 16:10:47.811"/>
+</kw>
+<kw name="Click" library="Visits">
+<arg>${ResponsibleSaveBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230228 16:10:47.813" endtime="20230228 16:10:47.875"/>
+</kw>
+<msg timestamp="20230228 16:10:47.875" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:47.813" endtime="20230228 16:10:47.875"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:47.876" level="INFO">Clicking element 'xpath=//*[@data-tag='SelectButton']'.</msg>
+<status status="PASS" starttime="20230228 16:10:47.876" endtime="20230228 16:10:47.934"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:47.875" endtime="20230228 16:10:47.934"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:47.811" endtime="20230228 16:10:47.934"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:27.791" endtime="20230228 16:10:47.934"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:34:36.592" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230222 17:34:31.592" endtime="20230222 17:34:36.593"/>
+<msg timestamp="20230228 16:10:52.936" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:47.935" endtime="20230228 16:10:52.936"/>
 </kw>
+<kw name="Input McsQuantityProductValue1" library="Visits">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${SaveButton}</arg>
+<arg>xpath=//*[text()='${ProductValue1}']/../../div[2]/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230222 17:34:36.594" level="INFO">Clicking element 'xpath=//*[@data-item-marker='SaveButton']'.</msg>
-<status status="PASS" starttime="20230222 17:34:36.593" endtime="20230222 17:34:36.760"/>
-</kw>
-<status status="PASS" starttime="20230222 17:33:50.051" endtime="20230222 17:34:36.761"/>
+<msg timestamp="20230228 16:10:52.938" level="INFO">Clicking element 'xpath=//*[text()='Флоракс, КС (550+7,4 г/л) 5л']/../../div[2]/span'.</msg>
+<status status="PASS" starttime="20230228 16:10:52.937" endtime="20230228 16:10:53.053"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:34:38.762" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:34:36.761" endtime="20230222 17:34:38.762"/>
+<msg timestamp="20230228 16:10:56.055" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:53.053" endtime="20230228 16:10:56.055"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SetMcsQuantity}</arg>
+<arg>${McsQuantityValue}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:56.057" level="INFO">Typing text '10' into text field 'xpath=//input[@id='McsQuantityFloatEdit-el']'.</msg>
+<status status="PASS" starttime="20230228 16:10:56.055" endtime="20230228 16:10:56.222"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 17:34:40.766" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20230222 17:34:38.762" endtime="20230222 17:34:40.766"/>
+<msg timestamp="20230228 16:10:59.224" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:56.222" endtime="20230228 16:10:59.224"/>
+</kw>
+<kw name="Click" library="Visits">
+<arg>${SaveMcsQuantityBtn}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${check_element}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230228 16:10:59.226" endtime="20230228 16:10:59.248"/>
+</kw>
+<msg timestamp="20230228 16:10:59.248" level="INFO">${check_element} = True</msg>
+<status status="PASS" starttime="20230228 16:10:59.226" endtime="20230228 16:10:59.248"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${check_element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${Element}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Element}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230228 16:10:59.249" level="INFO">Clicking element 'xpath=//*[@data-item-marker='save']'.</msg>
+<status status="PASS" starttime="20230228 16:10:59.249" endtime="20230228 16:10:59.424"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:59.248" endtime="20230228 16:10:59.424"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:59.224" endtime="20230228 16:10:59.424"/>
+</kw>
+<status status="PASS" starttime="20230228 16:10:52.936" endtime="20230228 16:10:59.425"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5000s</arg>
+<arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230222 19:08:46.170" level="INFO">Slept 1 hour 23 minutes 20 seconds</msg>
-<status status="PASS" starttime="20230222 17:34:40.767" endtime="20230222 19:08:46.177"/>
+<msg timestamp="20230228 16:11:04.427" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230228 16:10:59.425" endtime="20230228 16:11:04.427"/>
 </kw>
-<tag>Smoke</tag>
-<status status="PASS" starttime="20230222 17:31:03.054" endtime="20230222 19:08:46.183"/>
-</test>
-<doc>Login</doc>
-<status status="PASS" starttime="20230222 17:31:02.746" endtime="20230222 19:08:46.191"/>
-</suite>
-<status status="PASS" starttime="20230222 17:31:02.744" endtime="20230222 19:08:46.200"/>
-</suite>
-<status status="PASS" starttime="20230222 17:31:02.742" endtime="20230222 19:08:46.204"/>
-</suite>
-<status status="PASS" starttime="20230222 17:31:02.740" endtime="20230222 19:08:46.207"/>
-</suite>
-<status status="PASS" starttime="20230222 17:31:02.708" endtime="20230222 19:08:46.209"/>
-</suite>
-<statistics>
-<total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
-</total>
-<tag>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
-</tag>
-<suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Agrotek3">Agrotek3</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">Agrotek3.Test</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Resources">Agrotek3.Test.Resources</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="TestCase">Agrotek3.Test.Resources.TestCase</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="Login">Agrotek3.Test.Resources.TestCase.Login</stat>
-</suite>
-</statistics>
-<errors>
-<msg timestamp="20230222 17:32:16.720" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.806" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.835" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.859" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.884" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.909" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.932" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.955" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:16.979" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:17.003" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:17.026" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:17.139" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:17.158" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:17.176" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.200" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.234" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.268" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.296" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.329" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.360" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.401" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.429" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.456" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:32:19.485" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.055" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.092" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.118" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.172" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.196" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.219" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.240" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.263" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.288" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.312" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.333" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.355" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.377" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:20.401" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.424" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.452" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.479" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.505" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.535" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.562" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.586" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.612" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.640" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:22.668" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:26.846" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:26.883" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:26.906" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:26.930" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:26.955" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:26.978" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.001" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.022" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.045" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.068" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.090" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.113" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.132" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:27.153" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.180" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.214" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.243" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.270" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.299" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.327" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.353" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.377" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.406" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg timestamp="20230222 17:34:29.431" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-</errors>
-</robot>
+<kw name="Input McsQuantityProductValue2" library="Visits">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[text()='${ProductValue2}']/../../div[2]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230228 16:11:04.430" level="INFO">Clicking element 'xpath=//*[text()='Результат Супер ВР (150 г/л), 10л']/../../div[2]/span'.</msg>
+<status status="PASS" starttime="20230228 16:11:04.428" endtime="20230228 16:11:04.555"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230228 16:11:07.558" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230228 16:11:04.557" endtime="20230228 16:11:07.559"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SetMcsQuantity}</arg>
+<arg>${McsQuantityValue}</arg>
+<doc>

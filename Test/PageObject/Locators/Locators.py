@@ -62,8 +62,8 @@ OwnedOwnershipTypeAreaPlant = "xpath=//li[contains(@data-item-marker,'В соб�
 CultureAreaPlant = "xpath=//div[contains(@data-item-marker,'Культура')]/input"
 SelectCultureAreaPlant = "xpath=//div[contains(@data-item-marker,'Культура')]/input/../div[4]"
 SteamCultureAreaPlant = "xpath=//div[contains(@data-item-marker,'Пары')]/div"
-#SearchCulture = "xpath=//input[contains(@id,'searchEdit-el')]"
-#SearchBtnCulture = "xpath=//span[contains(@data-tag,'SearchButton')]"
+Search = "xpath=//input[contains(@id,'searchEdit-el')]"
+SearchBtn = "xpath=//span[contains(@data-tag,'SearchButton')]"
 #ResponsibleSaveBtn
 
 SquareAreaPlant = "xpath=//div[contains(@data-item-marker,'Площадь, га')]/input"
@@ -157,15 +157,19 @@ CreateVisitFromLeadButton = "xpath=//span[@data-item-marker='McsCreateVisitFromL
 BtnComplete = "xpath=//span[contains(@data-item-marker,'Execute')]"
 
 #ACTIVITY
-#ActivityAddRecordBtn = "xpath=//span[@id='ActivitySectionV2SeparateModeAddRecordButtonButton-textEl']"
+ActivityAddRecordBtn = "xpath=//span[@id='ActivitySectionV2SeparateModeAddRecordButtonButton-textEl']"
 #VisitInSelectActivity = "xpath=//*[contains(@data-item-marker,'SeparateModeAddRecordButton')]//*[text()='Визит'"
-SelectFirstPartOfVisit = "xpath=//div[contains(@id,'grid-ActivitySectionV2DataGridGrid-wrap')]/div[1]"
+SelectFirstPartOfActivity = "xpath=//div[contains(@id,'grid-ActivitySectionV2DataGridGrid-wrap')]/div[1]"
 OpenFirstPartOfVisit = "xpath=//*[contains(@data-item-marker,'Открыть')]"
 
 SelectTabProductOnVisit = "xpath=//*[contains(@id,'ActivityPageV2TabsTabPanel-tabpanel-items')]//*[text()='Продукты']"
-AddRecordBtnOnVisit = "xpath=//*[contains(@data-item-marker,'AddRecordButton')]"
-SelectProductOnWindow = "xpath=//*[contains(@data-item-marker,'Product')]"
+AddRecordBtnOnVisit = "xpath=//*[contains(@data-item-marker,'Продукты')]/div/div/span[1]/span"
+SelectProductOnWindow = "xpath=//label[contains(@data-item-marker,'Product')]"
 SelectProductOnWindow = "xpath=//*[text()='Продукты']"
+SelectBtnOnProduct = "xpath=//*[contains(@data-tag,'SelectButton')]"
+ClickMcsQuantity = "xpath=//*[contains(@column-name,'McsQuantity')]/span"
+SetMcsQuantity = "xpath=//input[@id='McsQuantityFloatEdit-el']"
+SaveMcsQuantityBtn = "xpath=//*[@data-item-marker='save']"
 
 
 
