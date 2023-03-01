@@ -38,8 +38,11 @@ SaveButton = "xpath=//*[@data-item-marker='SaveButton']"
 
 
 #Into СounterpartySection
+LabelCounterparty = "//*[@id='MainHeaderSchemaPageHeaderCaptionLabel']"
+
 Email = "xpath=//*[@data-row='7']/div/div/div/input"
 Phone = "xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']"
+
 SaveBtn = "xpath=//*[@data-item-marker='SaveButton']"
 SelectType = "xpath=//input[@id='AccountPageV2McsAccountInTypeComboBoxEdit-item-input']"
 OurCompanyType = "xpath=//li[@data-value='57412fad-53e6-df11-971b-001d60e938c6']"
@@ -48,8 +51,12 @@ ProviderCompanyType = "xpath=//li[@data-value='d34b9da2-53e6-df11-971b-001d60e93
 
 #Execute Task
 ExecuteTask = "xpath=//span[@data-item-marker='Execute']"
-SelectResultTask = "xpath=//input[@idr='ResultComboBoxEdit-el']"
-CooperationRecommended = "xpath=//li[@data-value='d8eefd51-a15f-4add-8289-8f70ff4c494c']"
+SelectResultTask = "xpath=//input[@id='ResultComboBoxEdit-el']"
+#CooperationRecommended = "xpath=//li[@data-value='d8eefd51-a15f-4add-8289-8f70ff4c494c']"
+CooperationRecommended = "xpath=//li[@data-item-marker='Сотрудничество рекомендовано']"
+TaskCompleted = "xpath=//li[@data-item-marker='Выполнена']"
+
+
 
 #Payment Details
 AddAddressDetailsBtn = "xpath=//*[@id='McsAccountSignDetailAddRecordButtonButton-imageEl']"
@@ -150,11 +157,18 @@ SelectСounterparty = "xpath=//div[contains(@data-row,'3')]/div/div/div/input"
 SelectFirstPartOfNeeds = "xpath=//div[contains(@id,'grid-LeadSectionV2DataGridGrid-wrap')]/div[2]"
 #//div[contains(@id,'grid-LeadSectionV2DataGridGrid')]//*[text()='j_Test_New11'][1]
 OpenFirstPartOfNeeds = "xpath=//span[contains(@data-item-marker, 'Открыть')]"
+SelectHistorySection = "xpath=//*[text()='История']"
+OpenFirstPartOfActivityInHistory = "xpath=//div[contains(@id, 'grid-ActivityDetailV2DataGridGrid-wrap')]/div[2]/div/a"
+
+
+
 
 #Visit
 CreateVisitFromLeadButton = "xpath=//span[@data-item-marker='McsCreateVisitFromLeadButton']"
 #BtnComplete = "xpath=//div[contains(@id,'LeadSectionActionsDashboardDashboardContainerGrid')]"
 BtnComplete = "xpath=//span[contains(@data-item-marker,'Execute')]"
+
+
 
 #ACTIVITY
 ActivityAddRecordBtn = "xpath=//span[@id='ActivitySectionV2SeparateModeAddRecordButtonButton-textEl']"
@@ -170,6 +184,12 @@ SelectBtnOnProduct = "xpath=//*[contains(@data-tag,'SelectButton')]"
 ClickMcsQuantity = "xpath=//*[contains(@column-name,'McsQuantity')]/span"
 SetMcsQuantity = "xpath=//input[@id='McsQuantityFloatEdit-el']"
 SaveMcsQuantityBtn = "xpath=//*[@data-item-marker='save']"
+SelectMainInformationSectionOnWindow = "xpath=//*[text()='Основная информация']"
+LeadNeedOfVisit = "xpath=//*[contains(@data-item-marker,'Lead Потребность')]/div/a"
+LeadSalesOfVisit = "xpath=//*[contains(@data-item-marker,'Opportunity Продажа')]/div/a"
+
+
+
 
 
 

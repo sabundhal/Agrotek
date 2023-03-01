@@ -4,6 +4,8 @@ Library    Maticson.py
 Variables  ../TestData/Testdata.py
 Resource  ../../PageObject/KeywordDefinationFiles/LeftMenu.robot
 Resource  ../../PageObject/KeywordDefinationFiles/Counterparty.robot
+Resource  ../../PageObject/KeywordDefinationFiles/Needs.robot
+Resource  ../../PageObject/KeywordDefinationFiles/Visits.robot
 Variables    ../Locators/Locators.py
 
 *** Keywords ***
@@ -74,6 +76,15 @@ Input McsQuantityProductValue3
     Click  ${SaveMcsQuantityBtn}
 
 
+Click SelectMainInformationSectionOnWindow
+    Click  ${SelectMainInformationSectionOnWindow}
+    Wait Until Page Contains Element  ${LeadNeedOfVisit}  timeout=30
+    Click  ${LeadNeedOfVisit}
+
+
+
+Go To Sales
+   Click SelectHistorySection
 
 
 
@@ -95,11 +106,8 @@ Click SaveButton
     Click  ${SaveButton}
 
 Create SaleOnVisit
-    Click Activity
-    sleep    5s
-    Click SelectFirstPartOfActivity
-    sleep    5s
-    Click OpenFirstPartOfVisit
+    #переход в визит и добавление товаров
+    Click SelectHistorySection
     sleep    5s
     Click SelectTabProductOnVisit
     sleep    5s
@@ -110,7 +118,15 @@ Create SaleOnVisit
     Input McsQuantityProductValue2
     sleep    5s
     Input McsQuantityProductValue3
-
+    sleep    5s
+     #перейти обратно в потребность и закрыть ее
+    Click SelectMainInformationSectionOnWindow
+    #закрыть задачу
+    Complete Task Visit
+    #перейти в продажу
+    Click SelectHistorySection
+    sleep    5s
+    Click  ${LeadSalesOfVisit}
     #Click SaveButton
 
 

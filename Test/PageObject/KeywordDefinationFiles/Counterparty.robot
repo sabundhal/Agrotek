@@ -40,13 +40,19 @@ Set Section Filter
 
 Click AddСounterpartyBtn
     Click  ${AddСounterpartyBtn}
-    Wait Until Page Contains Element  ${MiniPageHeader}  timeout=30
+    Wait Until Page Contains Element  ${NameCounterpartyPH}  timeout=30
+
+Click MainPhone
+    Wait Until Page Contains Element  ${Phone}  timeout=30
+    Click  ${Phone}
 
 Click AddPaymentDetailsBtn
+    Wait Until Page Contains Element  ${AddPaymentDetailsBtn}  timeout=30
     Click  ${AddPaymentDetailsBtn}
     Wait Until Page Contains Element  ${BIK}  timeout=30
 
 Click TypeAdress
+    Wait Until Page Contains Element  ${TypeAdress}  timeout=30
     Click  ${TypeAdress}
     Wait Until Page Contains Element  ${Country}  timeout=30
 
@@ -62,23 +68,43 @@ Click ResponsibleSaveBtn
     Wait Until Page Contains Element  ${CloseBtn}  timeout=30
 
 Click AddNewContactBtn
+    Wait Until Page Contains Element  ${AddNewContactBtn}  timeout=30
     Click  ${AddNewContactBtn}
     Wait Until Page Contains Element  ${ContactHeader}  timeout=30
     Wait Until Page Contains Element  ${NameNewContact}  timeout=30
 
+
+Click SelectOwnerLookup1
+    Wait Until Page Contains Element  ${SelectOwnerLookup1}  timeout=30
+    Click   ${SelectOwnerLookup1}
+
+Click SelectFromListOwnerLookup
+    Wait Until Page Contains Element  ${SelectFromListOwnerLookup}  timeout=30
+    Click   ${SelectFromListOwnerLookup}
+
+Click Responsible
+    Wait Until Page Contains Element  ${Responsible}  timeout=30
+    Click   ${Responsible}
+
+
+Click DepartmentNewContact
+    Wait Until Page Contains Element  ${DepartmentNewContact}  timeout=30
+    Click   ${DepartmentNewContact}
+    Wait Until Page Contains Element  ${AdministrationNewContact}  timeout=30
+    Click   ${AdministrationNewContact}
+
+
+
 Select TypeCounterparty
     Run Keyword And Ignore Error    Scroll Element Into View    xpath=//input[@id='AccountPageV2McsAccountInTypeComboBoxEdit-item-input']
-    sleep    2s
     Click    ${SelectType}
     Wait Until Page Contains Element  ${OurCompanyType}  timeout=30
     sleep    2s
     Click    ${OurCompanyType}
-    sleep    2s
     Click    ${SelectType}
     Wait Until Page Contains Element  ${ContractorCompanyType}  timeout=30
     sleep    2s
     Click    ${ContractorCompanyType}
-    sleep    2s
     Click    ${SelectType}
     sleep    2s
     Wait Until Page Contains Element  ${ProviderCompanyType}  timeout=30
@@ -122,59 +148,81 @@ Payment Details
 
 Input NameCounterparty
     Input Text  ${NameCounterpartyPH}  ${NameCounterparty}
+    Wait Until Page Contains Element  ${InnCounterpartyPH}  timeout=30
+
 Input InnCounterparty
     Input Text  ${InnCounterpartyPH}  ${InnCounterparty}
 
 Input Email
+    Wait Until Page Contains Element  ${Email}  timeout=30
     Input Text  ${Email}  ${EmailValue}
 
-Input Phone
-    Input Text  ${Phone}  ${PhoneValue}
+#Input Phone
+    #Input Text  ${Phone}  ${PhoneValue}
 
 Input PublicName
+    Wait Until Page Contains Element  ${PublicName}  timeout=30
     Input Text  ${PublicName}  ${PublicNameValue}
 
 Input ShortName
+    Wait Until Page Contains Element  ${ShortName}  timeout=30
     Input Text  ${ShortName}  ${ShortNameValue}
 
 Input OGRN
+    Wait Until Page Contains Element  ${OGRN}  timeout=30
     Input Text  ${OGRN}  ${OGRNValue}
 
 Input KPP
+    Wait Until Page Contains Element  ${KPP}  timeout=30
     Input Text  ${KPP}  ${KPPValue}
 
 Input OKPO
+    Wait Until Page Contains Element  ${OKPO}  timeout=30
     Input Text  ${OKPO}  ${OKPOValue}
 
 Input BIK
+    Wait Until Page Contains Element  ${BIK}  timeout=30
     Input Text  ${BIK}  ${BIKValue}
 
 Input AccountNumber
+    Wait Until Page Contains Element  ${AccountNumber}  timeout=30
     Input Text  ${AccountNumber}  ${AccountNumberValue}
 
 Input Country
+    Wait Until Page Contains Element  ${Country}  timeout=30
     Input Text  ${Country}  ${CountryValue}
 
 Input Region
+    Wait Until Page Contains Element  ${Region}  timeout=30
     Input Text  ${Region}  ${RegionValue}
 
 Input Area
+    Wait Until Page Contains Element  ${Area}  timeout=30
     Input Text  ${Area}  ${AreaValue}
 
 Input City
+    Wait Until Page Contains Element  ${City}  timeout=30
     Input Text  ${City}  ${CityValue}
 
 Input AdressFromCity
+    Wait Until Page Contains Element  ${AdressFromCity}  timeout=30
     Input Text  ${AdressFromCity}  ${AdressFromCityValue}
 
 Input NameNewContact
+    Wait Until Page Contains Element  ${NameNewContact}  timeout=30
     Input Text  ${NameNewContact}  ${NameNewContactValue}
 
 Input EmailNewContact
+    Wait Until Page Contains Element  ${EmailNewContact}  timeout=30
     Input Text  ${EmailNewContact}  ${EmailNewContactValue}
 
 Input JobTitleNewContact
+    Wait Until Page Contains Element  ${JobTitleNewContact}  timeout=30
     Input Text  ${JobTitleNewContact}  ${SupervisorNewContactValue}
+    Wait Until Page Contains Element  ${SupervisorNewContact}  timeout=30
+    Click    ${SupervisorNewContact}
+
+
 
 Press Our Key
     [Arguments]    ${Key}   ${Num}    ${xpath}
@@ -188,116 +236,89 @@ Input ZipCode
     Input Text  ${ZipCode}  ${ZipCodeValue}
 
 Add New Counterparty
-     sleep    2s
      Input NameCounterparty
-     sleep    2s
      Input InnCounterparty
-     sleep    2s
+     Wait Until Page Contains Element  ${OwnersFormCounterpartyPH}  timeout=30
      Click Element  ${OwnersFormCounterpartyPH}
-     sleep    2s
+     Wait Until Page Contains Element  ${OwnersFormCounterparty}  timeout=30
      Click Element   ${OwnersFormCounterparty}
-     sleep    2s
      Click Element    ${SaveEditButton}
 
+
 Go Into Counterparty
+    Wait Until Page Contains Element  xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']  timeout=30
     click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
-    sleep    2s
     Select TypeCounterparty
-    sleep    2s
     Input Email
-    sleep    2s
     Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
-    sleep    2s
+    sleep    1s
     Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
-    sleep    2s
+    sleep    1s
     Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
-    sleep    2s
     Click Element    ${SaveButton}
     sleep    5s
 
 Filling LegalInformation
+    Wait Until Page Contains Element  xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']  timeout=30
+    click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
     Input PublicName
-    sleep    2s
     Input ShortName
-    sleep    2s
     Input OGRN
-    sleep    2s
     Input KPP
-    sleep    2s
     Input OKPO
-    sleep    2s
     Click Element    ${SaveButton}
+    sleep    5s
+
 Filling PaymentDetails
+    sleep    5s
     Click AddPaymentDetailsBtn
     Input BIK
-    sleep    5s
+    Wait Until Page Contains Element  xpath=//li[contains(@data-item-marker,'${BIKValue}')][1]  timeout=30
     click element   xpath=//li[contains(@data-item-marker,'${BIKValue}')][1]
     Input AccountNumber
-    sleep    5s
     Click Element    ${SaveButton}
+    sleep    5s
 
 Filling CountryLookup
-    sleep    2s
+    sleep    5s
     Click Element   ${AddAddressDetailsBtn}
-    sleep    2s
     Click TypeAdress
-    sleep    2s
     Input Country
-    sleep    2s
+    sleep    5s
     click element   xpath=//li[contains(@data-item-marker,'${CountryValue}')][1]
-    sleep    2s
     Input Region
-    sleep    2s
+    sleep    5s
     click element   xpath=//li[contains(@data-item-marker,'${RegionValue}')][1]
-    sleep    2s
     Input Area
-    sleep    2s
+    sleep    5s
     click element   xpath=//div[contains(@data-item-marker,'Район')]/ul/li[1]
-    sleep    2s
     Input City
-    sleep    2s
+    sleep    5s
     click element   xpath=//div[contains(@data-item-marker,'Город')]/ul/li[1]
-    sleep    2s
     Input AdressFromCity
-    sleep    2s
     Input ZipCode
-    sleep    2s
     Click Element    ${SaveButton}
-    sleep    2s
+    sleep    5s
 
 Filling Categorization
-    Click Element   ${SelectOwnerLookup1}
-    sleep    2s
-    #Click Element   ${SelectOwnerLookup2}
-    sleep    2s
-    Click Element   ${SelectFromListOwnerLookup}
-    sleep    5s
+    Click SelectOwnerLookup1
+    Click SelectFromListOwnerLookup
     Run Keyword And Ignore Error    Scroll Element Into View    xpath=//*[@id='AccountPageV2AccountOwnerLookupEdit-el']/..
-    #Scroll Element Into View   ${OwnerLookup1}
-    sleep    5s
     Click OwnerLookup
-    sleep    2s
-    Click Element   ${Responsible}
-    sleep    2s
+    Click Responsible
     Click ResponsibleSaveBtn
+    sleep    5s
 
 Filling AddNewContact
-    sleep    5s
     Click AddNewContactBtn
-    sleep    5s
     Input NameNewContact
-    sleep    2s
     Input EmailNewContact
-    sleep    2s
     Click Element    ${WorkSpaceNewContact}
-    sleep    2s
     Input JobTitleNewContact
-    sleep    2s
-    Click Element    ${SupervisorNewContact}
-    sleep    2s
-    Click Element    ${DepartmentNewContact}
-    sleep    2s
-    Click Element    ${AdministrationNewContact}
+    Click DepartmentNewContact
+    #Click Element    ${SupervisorNewContact}
+    #Click Element    ${DepartmentNewContact}
+    #Click Element    ${AdministrationNewContact}
     sleep    2s
     Click Element    ${MobilePhoneNewContact}
     sleep    2s
@@ -314,8 +335,20 @@ Filling AddNewContact
     Click Element    ${SaveButton}
     sleep    5s
     Click Element    ${SaveButton}
+    sleep    5s
 
 
+Finish Counterparty
+     RELOAD PAGE
+     Wait Until Page Contains Element  ${LabelCounterparty}  timeout=30
+     Wait Until Page Contains Element  ${ExecuteTask}  timeout=30
+     Click Element    ${ExecuteTask}
+     Wait Until Page Contains Element  ${SelectResultTask}  timeout=30
+     Click Element    ${SelectResultTask}
+     Wait Until Page Contains Element  ${CooperationRecommended}  timeout=30
+     Click Element    ${CooperationRecommended}
+     sleep    2s
+     Click Element    ${SaveEditButton}
 
 
 

@@ -11,28 +11,17 @@ Resource  ../../PageObject/KeywordDefinationFiles/Counterparty.robot
 Login to Agrotek
     [Tags]  Smoke
     When Auto Login
-    sleep    2s
     When Go Sales
-     sleep    2s
     When Click Сounterparty
-     sleep    2s
-    When Click AddСounterpartyBtn
-    sleep    2s
-    When Add New Counterparty
-    sleep    5s
-    When Go Into Counterparty
-    sleep    2s
+    #When Click AddСounterpartyBtn
+    #When Add New Counterparty
+    #When Go Into Counterparty
     When Filling LegalInformation
-    sleep    2s
     When Filling PaymentDetails
-    sleep    2s
     When Filling CountryLookup
-    sleep    2s
     When Filling Categorization
-    sleep    2s
     When Filling AddNewContact
-    sleep    2s
-    #When Execute Task
+    When Finish Counterparty
     sleep    2s
 
     sleep    5000s

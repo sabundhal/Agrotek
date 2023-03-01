@@ -10,19 +10,6 @@ Resource  ../../PageObject/KeywordDefinationFiles/Visits.robot
 *** Variables ***
 
 *** Test Cases ***
-Create ActivitySales
-    [Tags]  Smoke
-    When Auto Login
-    sleep    2s
-    When Go Sales
-    sleep    2s
-    When Create SaleOnVisit
-
-
-
-
-    sleep    5000s
-    #When Close Browser
 
 
 *** Keywords ***

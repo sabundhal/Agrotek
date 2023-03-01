@@ -3,7 +3,8 @@ Library  SeleniumLibrary
 Library    Maticson.py
 Variables  ../TestData/Testdata.py
 Variables    ../Locators/Locators.py
-
+Resource  ../../PageObject/KeywordDefinationFiles/Needs.robot
+Resource  ../../PageObject/KeywordDefinationFiles/Visits.robot
 *** Keywords ***
 Wait Until Page Is Loaded
     Wait For Condition    return window.document.readyState === "complete"
@@ -24,11 +25,11 @@ Click AddNeedsBtn
 
 Click TypeOfNeedsBtn
     Click  ${TypeOfNeedsBtn}
-    Wait Until Page Contains Element  ${RevealingTypeOfNeedsBtn}  timeout=30
+    Wait Until Page Contains Element  ${NeedForOurProductsTypeOfNeedsBtn}  timeout=30
 
 
-Click RevealingTypeOfNeedsBtn
-    Click  ${RevealingTypeOfNeedsBtn}
+Click NeedForOurProductsTypeOfNeedsBtn
+    Click  ${NeedForOurProductsTypeOfNeedsBtn}
     Wait Until Page Contains Element  ${SelectСounterparty}  timeout=30
 
 Input NameOfCounterparty
@@ -52,9 +53,23 @@ Click OpenFirstPartOfNeeds
 
 Click CreateVisitFromLeadButton
     Click  ${CreateVisitFromLeadButton}
-    sleep    3s
+    sleep    2s
     RELOAD PAGE
+    sleep    5s
+
+Complete Task Visit
+
     Wait Until Page Contains Element  ${BtnComplete}  timeout=30
+    Mouse Over  ${BtnComplete}
+    Click  ${BtnComplete}
+    Wait Until Page Contains Element  ${SelectResultTask}  timeout=30
+    Click  ${SelectResultTask}
+    Wait Until Page Contains Element  ${TaskCompleted}  timeout=30
+    Click  ${TaskCompleted}
+    sleep    1s
+    Click  ${SaveEditButton}
+    sleep    5s
+
 
 Click SelectFirstPartOfActivity
     Click  ${SelectFirstPartOfActivity}
@@ -67,22 +82,25 @@ Click SelectTabProductOnVisit
     Click  ${AddRecordBtnOnVisit}
     Wait Until Page Contains Element  ${SelectProductOnWindow}  timeout=30
 
+Click SelectHistorySection
 
+    Wait Until Page Contains Element  ${SelectHistorySection}  timeout=30
+    Click  ${SelectHistorySection}
+    Wait Until Page Contains Element  ${OpenFirstPartOfActivityInHistory}  timeout=30
+    Click  ${OpenFirstPartOfActivityInHistory}
+    Click  ${OpenFirstPartOfActivityInHistory}
+    Wait Until Page Contains Element  ${SelectMainInformationSectionOnWindow}  timeout=30
 
 
 Add Needs
     sleep    5s
     Click Needs
-    sleep    5s
     Click AddNeedsBtn
-    sleep    5s
     Click TypeOfNeedsBtn
-    sleep    5s
-    Click RevealingTypeOfNeedsBtn
-    sleep    5s
+    Click NeedForOurProductsTypeOfNeedsBtn
     Input NameOfCounterparty
-    sleep    5s
     Click SaveEditButton
+    sleep    5s
 
 
 Add Visit
@@ -92,19 +110,6 @@ Add Visit
     Click OpenFirstPartOfNeeds
     sleep    5s
     Click CreateVisitFromLeadButton
-
-Go to Activity
-    sleep    5s
-    Click Activity
-    sleep    5s
-    Click SelectTabProductOnVisit
-    sleep    2s
-    click Element   xpath=//*[text()='${ProductValue1}']
-    sleep    2s
-    click Element   xpath=//*[text()='${ProductValue2}']
-    sleep    2s
-    click Element   xpath=//*[text()='${ProductValue3}']
-    sleep    2s
 
 
 

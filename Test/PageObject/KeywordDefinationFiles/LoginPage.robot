@@ -17,6 +17,7 @@ Click CollapseBtnMenu
 
 Auto Login
     Open Browser  ${URL}  Chrome
+    Maximize Browser Window
     Wait Until Page Contains Element  ${LoginButton}  timeout=30
     Input Username
     Input Password
