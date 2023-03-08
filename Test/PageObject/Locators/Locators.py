@@ -189,6 +189,28 @@ LeadNeedOfVisit = "xpath=//*[contains(@data-item-marker,'Lead Потребнос
 LeadSalesOfVisit = "xpath=//*[contains(@data-item-marker,'Opportunity Продажа')]/div/a"
 
 
+#SALES
+OpportunutyOfContract = "xpath=//div[@id='OpportunityPageV2GeneralInfoTabGroupContractControlGroup']/div/div/div[2]/div/div[2]/div/input"
+ArbitraryCredit = "xpath=//li[contains(@data-item-marker,'Произвольное Кредит (РУБ)')]"
+TypicalPrepayment = "xpath=//li[contains(@data-item-marker,'Типовое Предоплата (РУБ)')]"
+SayYesBtn = "xpath=//span[contains(@data-item-marker,'Да')]"
+SalesPassportSection = "xpath=//*[text()='Паспорт Продажи']"
+SelectAddressList = "xpath=//div[@id='AddressContainerContainerList']/div[1]/div/label"
+DataOfSalesSection = "xpath=//*[text()='Данные о продаже']"
+ShipmentWarehouse = "xpath=//div[contains(@data-item-marker,'Склад отгрузки')]/input"
+SelectedShipmentWarehouse = "xpath=//*[@data-item-marker='Ахтубинск Альянс']"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

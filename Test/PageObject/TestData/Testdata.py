@@ -1,13 +1,14 @@
 # Login Page Test Data
+NumberOfIteration = "24"
 Username = "Supervisor"
 Password = "Su77Agr*"
-NameCounterparty = "j_Test_New19"
-InnCounterparty = "220000300019"
-PublicNameValue = "j_Test_PublicName19"
-ShortNameValue = "j_Test_ShortName19"
-NameNewContactValue = "Тест_Контакт_19"
-EmailNewContactValue = "test.newcontact.19@yandex.ru"
-EmailValue = "test.19@yandex.ru"
+NameCounterparty = "j_Test_New"+NumberOfIteration
+InnCounterparty = "2200003000"+NumberOfIteration
+PublicNameValue = "j_Test_PublicName"+NumberOfIteration
+ShortNameValue = "j_Test_ShortName"+NumberOfIteration
+NameNewContactValue = "Тест_Контакт_"+NumberOfIteration
+EmailNewContactValue = "test.newcontact."+NumberOfIteration+"@yandex.ru"
+EmailValue = "test."+NumberOfIteration+"@yandex.ru"
 AccountNumberSet = "30101810400000000225"
 PhoneValue = "9999999999"
 OGRNValue = "0000000000"
@@ -36,3 +37,6 @@ ProductValue1 = "Флоракс, КС (550+7,4 г/л) 5л"
 ProductValue2 = "Результат Супер ВР (150 г/л), 10л"
 ProductValue3 = "Солигор, КЭ (53 г/л+148 г/л+224 г/л) 5л"
 McsQuantityValue = "10"
+
+#Sales
+ShipmentWarehouseValue = "Ахтубинск Альянс"

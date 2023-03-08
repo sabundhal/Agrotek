@@ -250,17 +250,19 @@ Go Into Counterparty
     click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
     Select TypeCounterparty
     Input Email
+    sleep    2s
     Click Element   xpath=//*[@id='AccountPageV2AccountPhoneTextEdit-el']
-    sleep    1s
+    sleep    2s
     Press Our Key    \ue012    14    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
-    sleep    1s
+    sleep    2s
     Press Our Key    \ue021    10    xpath=//input[@id='AccountPageV2AccountPhoneTextEdit-el']
+    sleep    2s
     Click Element    ${SaveButton}
     sleep    5s
 
 Filling LegalInformation
-    Wait Until Page Contains Element  xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']  timeout=30
-    click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
+    #Wait Until Page Contains Element  xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']  timeout=30
+    #click Element   xpath=//*[@class='grid-cols-2 grid-primary-column']//*[text()='${NameCounterparty}']
     Input PublicName
     Input ShortName
     Input OGRN
@@ -342,6 +344,9 @@ Finish Counterparty
      RELOAD PAGE
      Wait Until Page Contains Element  ${LabelCounterparty}  timeout=30
      Wait Until Page Contains Element  ${ExecuteTask}  timeout=30
+     sleep    2s
+     Mouse Over     xpath=//span[@data-item-marker='Execute']
+     sleep    2s
      Click Element    ${ExecuteTask}
      Wait Until Page Contains Element  ${SelectResultTask}  timeout=30
      Click Element    ${SelectResultTask}
