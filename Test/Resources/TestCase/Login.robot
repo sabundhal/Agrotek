@@ -32,8 +32,8 @@ Part Of Create Counterparty
     When Auto Login
     When Go Sales
     When Click Сounterparty
-    #When Click AddСounterpartyBtn
-    #When Add New Counterparty
+    When Click AddСounterpartyBtn
+    When Add New Counterparty
     When Go Into Counterparty
     When Filling LegalInformation
     When Filling PaymentDetails
